@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nahuelito Minecraft Server</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#001f25",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#6cd3f7",
+                        "on-surface-variant": "#3d494c",
+                        "secondary-fixed": "#b7eaff",
+                        "tertiary-fixed-dim": "#2fd9f4",
+                        "on-primary-container": "#00424f",
+                        "outline-variant": "#bcc9cd",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-primary-fixed": "#001f26",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-container": "#006077",
+                        "background": "#f7f9fb",
+                        "on-secondary-fixed": "#001f28",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#06b6d4",
+                        "tertiary-container": "#00b7cf",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#00687a",
+                        "on-secondary-fixed-variant": "#004e61",
+                        "tertiary": "#006877",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-bright": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-fixed-variant": "#004e5a",
+                        "tertiary-fixed": "#a2eeff",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed-dim": "#4cd7f6",
+                        "primary": "#00687a",
+                        "surface-container": "#eceef0",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#4cd7f6",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#76dcff",
+                        "outline": "#6d797d",
+                        "on-primary-fixed-variant": "#004e5c",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-fixed": "#acedff",
+                        "on-tertiary-container": "#00434d",
+                        "on-background": "#191c1e",
+                        "secondary": "#006780",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "xs": "8px",
+                        "sm": "16px",
+                        "base": "4px",
+                        "gutter": "20px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "container-max": "1200px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Space Grotesk"],
+                        "display-lg-mobile": ["Space Grotesk"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "label-sm": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "display-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom Styles & Overrides */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+        }
+
+        /* Material Symbols Outline Class */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Card Ambient Shadow */
+        .ambient-shadow {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+        }
+        
+        .ambient-shadow:hover {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        /* Button Transitions */
+        button, a {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        /* Modals & Backdrop */
+        .modal-backdrop {
+            background-color: rgba(0,0,0,0.4);
+            backdrop-filter: blur(4px);
+        }
+        
+        /* Hide scrollbar for grid */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Mobile Menu Transition */
+        #mobileMenu {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobileMenu.open {
+            max-height: 500px;
+            opacity: 1;
+
+            /* Animación forzada para el Slider Infinito */
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.slider-track {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+}
+
+/* Efectos al pasar el ratón (Hover) */
+.slider-container {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.slider-container:hover {
+    transform: scale(1.02); /* Pequeño zoom */
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.25); /* Brillo cyan exterior */
+    border-color: rgba(0, 255, 255, 0.6);
+}
+
+.slider-container:hover .slider-track {
+    animation-play-state: paused; /* Frena el movimiento para poder leer */
+}
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-lowest shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<div class="max-w-7xl mx-auto px-gutter flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<!-- Brand Logo -->
+<a href="#" class="flex items-center gap-3 transition-transform hover:scale-105">
+    <!-- Cambiá 'tu_logo.png' por el nombre real de tu archivo -->
+    <img src="/assets/images/nahuelitoLOGO.png" alt="Logo Nahuelito" class="h-20 w-auto object-contain">
+    <!-- Si querés que también diga el nombre al lado, dejá la línea de abajo. Si solo querés la imagen, borrala. -->
+    <span class="font-headline-md text-xl font-bold tracking-tighter text-primary dark:text-primary-fixed-dim">Nahuelito</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-md h-full items-center">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-bold h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#">Inicio</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods">Mods</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods" onclick="document.querySelector('[data-category=\'shaders\']').click()">Shaders</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods" onclick="document.querySelector('[data-category=\'texturas\']').click()">Recursos</a>
+</nav>
+<!-- Trailing Actions -->
+<!-- Trailing Actions -->
+<div class="flex items-center gap-sm">
+<span id="server-status-container" class="hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant">
+    <span class="w-2 h-2 rounded-full bg-green-500"></span> Servidor Activo
+</span>
+<button class="font-label-sm text-label-sm bg-primary-container text-on-primary hover:opacity-90 px-4 py-2 rounded-lg hidden md:flex items-center gap-2" onclick="copyIP()">
+                    179.61.223.150:24391
+                    <span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden bg-surface-container-lowest border-t border-surface-variant" id="mobileMenu">
+<div class="px-gutter py-4 flex flex-col gap-4">
+<a class="font-label-sm text-primary font-bold" href="#" onclick="toggleMobileMenu()">Inicio</a>
+<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'mods\']').click()">Mods</a>
+<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'shaders\']').click()">Shaders</a>
+<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'texturas\']').click()">Recursos</a>
+<button class="font-label-sm text-label-sm bg-primary-container text-on-primary hover:opacity-90 px-4 py-2 rounded-lg flex items-center gap-2 w-max" onclick="copyIP()">
+                    Copiar IP (179.61.223.150:24391)
+                    <span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-[#0b1315] to-[#00687a] py-xl border-none">
+        <div class="absolute inset-0 z-0 opacity-10 mix-blend-overlay pointer-events-none">
+        <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWt1UrDWrHOOvsYEc0BRl0VrvGrr4jLljsL9Ar4U2X3IhtOfpr8OdB2TL1QvVfkYF2gEtLUN4Y3o4Hn8xyojYLUMCNL0v4Hcgb6SEc9jboGdU7ZsdjNPMHmfbTiaSERursSD3mJD3Rm1vebRP1FhxV9kpY5PXe2-T4r44vX1KKqsAssfoPeyhlYcueDPO1pYhTKVMtSjctj4_VDQdld0Nttx1g6X5OqiOrK35kyNP1rfDMHep0z3g46k5R8I_281Slu298he0ABIC3')"></div>
+    </div>
+    
+    <!-- Contenedor Principal -->
+    <div class="relative z-10 max-w-container-max mx-auto px-gutter md:px-lg flex flex-col items-center text-center">
+        <!-- Badge de la Comunidad -->
+        <span class="font-label-sm text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-4 py-1.5 rounded-full uppercase tracking-widest mb-sm backdrop-blur-sm">
+            Comunidad Meicraft
+        </span>
+        
+        <h1 class="text-3xl md:text-5xl font-bold !text-white tracking-tight mb-4">
+    Nahuelito Server
+</h1>
+        
+        <p class="font-body-lg text-body-lg text-slate-300 max-w-2xl mx-auto mb-lg leading-relaxed drop-shadow">
+            Servidores de Minecraft hechos para jugar entre amigos, amigos de amigos y conocidos. Hosteamos en servidores de pago para garantizar el menor lag posible y mantener una administración activa. Todo a pulmón para viciar tranquilos.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-sm">
+            <button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2 ambient-shadow hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-cyan-500/10" onclick="copyIP()">
+                Copiar IP
+                <span class="material-symbols-outlined">content_copy</span>
+            </button>
+            <a class="bg-white/5 border-2 border-white/10 text-white px-8 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2 hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-sm" href="#mods">
+                Explorar Mods
+                <span class="material-symbols-outlined">explore</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- === SECCIÓN DE INTRODUCCIÓN === -->
+<section class="w-full bg-gradient-to-b from-[#00687a] via-[#f7f9fb] to-[#f7f9fb] dark:via-[#0f172a] dark:to-[#0f172a] pt-0 pb-0">
+    <div class="max-w-container-max mx-auto px-gutter md:px-lg flex flex-col gap-16 md:gap-24 pt-16">
+        
+        <!-- Panel 1: Bienvenida -->
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="flex-1 space-y-4">
+                <h2 class="font-display-lg-mobile md:font-display-lg text-white font-bold drop-shadow-md">
+                    TE DAMOS LA BIENVENIDA
+                </h2>
+                <p class="font-body-lg text-white/90 leading-relaxed drop-shadow">
+                    Para empezar tu aventura de la mejor manera, te recomendamos establecer un campamento base seguro antes de que caiga la noche. Asegúrate de tener el paquete de mods correctamente instalado y configurado. Una vez adentro, reúne recursos básicos, alíate con otros jugadores y prepárate para los desafíos que la oscuridad trae consigo. ¡La supervivencia y la cooperación son claves!
+                </p>
+            </div>
+            <div class="flex-1 w-full aspect-video bg-black/20 rounded-2xl border border-white/20 shadow-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] hover:border-cyan-400/50">
+                <img src="https://i.blogs.es/2c7534/minecraft/1200_800.webp" alt="Bienvenida Nahuelito" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">              </div>
+        </div>
+
+        <!-- Panel 2: Exploración -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div class="flex-1 space-y-4">
+                <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
+                    TE INVITAMOS A EXPLORAR UN MUNDO
+                </h2>
+                <p class="font-body-lg text-on-surface-variant dark:text-outline-variant leading-relaxed">
+                    Gracias a mods como <strong>Tectonic</strong> y <strong>Repurposed Structures</strong>, el mundo es extenso, inmersivo y está lleno de paisajes impresionantes. Sin embargo, no será un paseo tranquilo: <strong>The Graveyard</strong> y <strong>AdventureZ</strong> aseguran que tu viaje sea complicado. Te enfrentarás a nuevos enemigos hostiles, mazmorras oscuras y jefes implacables. Las recompensas y botines únicos valdrán cada riesgo que tomes.
+                </p>
+            </div>
+            <div class="flex-1 w-full aspect-video bg-black/20 rounded-2xl border border-white/20 shadow-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] hover:border-cyan-400/50">
+                <img src="https://i.blogs.es/72e47b/wallpaper_minecraft_village_pillage_1920x1080/1200_800.webp" alt="Exploración" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+        </div>
+
+        <!-- Panel 3: Construcción -->
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="flex-1 space-y-4">
+                <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
+                    CONSTRUYE SIN LÍMITES
+                </h2>
+                <p class="font-body-lg text-on-surface-variant dark:text-outline-variant leading-relaxed">
+                    Tu imaginación es el único límite. Con expansiones decorativas como <strong>Handcrafted</strong>, <strong>Another Furniture</strong> y <strong>Decorative Blocks</strong>, puedes diseñar bases increíblemente detalladas. Desde tabernas rústicas hasta búnkeres industriales, tendrás cientos de bloques y muebles funcionales para darle vida a tu hogar de manera estética.
+                </p>
+            </div>
+            <div class="flex-1 w-full aspect-video bg-black/20 rounded-2xl border border-white/20 shadow-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] hover:border-cyan-400/50">
+                <img src="https://external-preview.redd.it/i-just-finished-my-first-ever-minecraft-render-wallpaper-v0-Cn0Dfwf4Sh1r_rXiMnS6XMleUXCs5EcvjO2emGj8xwU.jpg?width=1080&crop=smart&auto=webp&s=242b6404e493c9cf096ce527cb0e7f086b16ff84" alt="Construcción" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+        </div>
+
+        <!-- Panel 4: Comunidad -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div class="flex-1 space-y-4">
+                <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
+                    UNA COMUNIDAD ACTIVA
+                </h2>
+                <p class="font-body-lg text-on-surface-variant dark:text-outline-variant leading-relaxed">
+                    La comunicación y el comercio lo son todo. El chat de voz por proximidad de <strong>Simple Voice Chat</strong> te permite interactuar de forma realista con otros jugadores. Además, los sistemas de comercio integrados facilitan la creación de una economía manejada por los propios usuarios. Crea tu facción, establece rutas seguras y domina el servidor.
+                </p>
+            </div>
+            <div class="flex-1 w-full aspect-video bg-black/20 rounded-2xl border border-white/20 shadow-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] hover:border-cyan-400/50">
+                <img src="https://es.gizmodo.com/app/uploads/2026/04/Gizmodo-4-8.jpg" alt="Comunidad" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+        </div>
+
+    </div>
+
+   <!-- === SLIDER INFINITO ANIMADO E INTERACTIVO === -->
+    <!-- Estilos inyectados localmente para evitar conflictos con Tailwind -->
+    <style>
+        @keyframes scroll-marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animacion-infinita {
+            display: flex;
+            width: max-content;
+            animation: scroll-marquee 25s linear infinite;
+        }
+        .contenedor-interactivo {
+            transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.4s ease-out;
+            cursor: default;
+        }
+        .contenedor-interactivo:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 35px rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.5);
+        }
+    </style>
+
+    <div class="contenedor-interactivo relative w-full mt-24 bg-[#050505] border-y border-cyan-900 overflow-hidden py-6 z-10">
+        
+        <!-- Sombras laterales -->
+        <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#050505] to-transparent z-20 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-20 pointer-events-none"></div>
+        
+        <!-- Pista de animación -->
+        <div class="animacion-infinita">
+            <!-- Set 1 -->
+            <div class="flex items-center gap-12 px-6 text-cyan-300 font-label-sm text-lg tracking-[0.2em] uppercase whitespace-nowrap">
+                <span>Vanilla Plus</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Decoración</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Cozy</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Dungeons</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Exploración</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Jefes Épicos</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Economía</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+            </div>
+            <!-- Set 2 -->
+            <div class="flex items-center gap-12 px-6 text-cyan-300 font-label-sm text-lg tracking-[0.2em] uppercase whitespace-nowrap">
+                <span>Vanilla Plus</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Decoración</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Cozy</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Dungeons</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Exploración</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Jefes Épicos</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+                <span>Economía</span>
+                <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- === FIN SECCIÓN DE INTRODUCCIÓN === -->
+
+<!-- Search & Filter Section -->
+<section class="w-full bg-[#f8fafc] dark:bg-[#0f172a] border-t border-slate-200/60 py-xl" id="mods">
+    <div class="max-w-container-max mx-auto px-gutter md:px-lg">
+        
+        <div class="flex flex-col md:flex-row gap-md items-center justify-between mb-xl">
+            <!-- Search Input -->
+            <div class="relative w-full md:w-96">
+                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+                <input class="w-full bg-white border border-slate-200 text-on-surface font-body-md pl-10 pr-4 py-3 rounded-xl focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container shadow-sm" id="searchInput" placeholder="Buscar mods, shaders..." type="text"/>
+            </div>
+            
+            <!-- Category Chips -->
+            <div class="flex gap-2 overflow-x-auto w-full md:w-auto no-scrollbar pb-2 md:pb-0">
+                <button class="filter-chip active font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-primary-container text-on-primary whitespace-nowrap shadow-sm" data-category="all">Todos</button>
+                <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="mods">Mods</button>
+                <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="shaders">Shaders</button>
+                <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="texturas">Texturas</button>
+            </div>
+        </div>
+
+        <!-- Dynamic Grid for Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-md" id="contentGrid">
+            <!-- Loader -->
+            <div class="col-span-full flex justify-center py-xl">
+                <span class="material-symbols-outlined animate-spin text-primary-container text-4xl">autorenew</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest full-width mt-xl">
+    <div class="max-w-7xl mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-center gap-md">
+        <div>
+            <div class="font-headline-md text-headline-md text-on-surface dark:text-on-surface mb-base">
+                Meicraft
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+                © 2026 Nahuelito. Comunidad de amigos.
+            </p>
+        </div>
+        <div class="flex gap-md">
+            <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-primary flex items-center gap-1" href="https://discord.gg/u5SZYNgQJ" target="_blank">
+                <span class="material-symbols-outlined text-[18px]">forum</span> Unirse al Discord
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- Details Modal -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center" id="detailsModal">
+<!-- Backdrop -->
+<div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+<!-- Modal Content -->
+<div class="relative bg-surface-container-lowest w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-xl mx-4 ambient-shadow flex flex-col transform scale-95 opacity-0 transition-all duration-300 ease-out" id="modalContent">
+<!-- Header -->
+<div class="sticky top-0 bg-surface-container-lowest z-10 px-md py-4 border-b border-surface-variant flex justify-between items-center rounded-t-xl">
+<h2 class="font-headline-md text-headline-md text-primary m-0" id="modalTitle">Mod Name</h2>
+<button class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-variant" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Body -->
+<div class="p-md flex flex-col gap-lg">
+<!-- Video/Image Placeholder -->
+<div class="w-full aspect-video bg-surface-container rounded-lg overflow-hidden flex items-center justify-center" id="modalMedia"></div>
+<!-- Description -->
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Descripción</h3>
+<p class="font-body-md text-body-md text-on-surface whitespace-pre-line" id="modalDesc"></p>
+</div>
+<!-- Guides -->
+<div class="bg-surface-bright p-sm rounded-lg border border-surface-variant hidden" id="modalGuidesContainer">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2">Guías y Notas</h3>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface space-y-1" id="modalGuides"></ul>
+</div>
+<!-- Enlace Externo Oficial -->
+<div class="bg-surface-bright p-sm rounded-lg border border-surface-variant flex items-center justify-between">
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1">Página Oficial del Proyecto</h3>
+<p class="text-sm text-on-surface-variant">Consulta la documentación completa en la plataforma original.</p>
+</div>
+<a class="font-label-sm text-label-sm px-4 py-2 bg-secondary-container text-on-secondary-container hover:bg-opacity-80 rounded-lg flex items-center gap-2" href="#" id="modalExternalLinkBtn" target="_blank">
+                    Visitar Sitio <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Footer Actions -->
+<!-- Footer Actions -->
+<div class="sticky bottom-0 px-md py-4 border-t border-surface-variant flex justify-end gap-sm bg-surface-bright rounded-b-xl">
+<button class="font-label-sm text-label-sm px-4 py-2 text-primary hover:bg-surface-variant rounded-lg" onclick="closeModal()">Cerrar</button>
+</div>
+<!-- Scripts -->
+<script>
+        // Copy IP Functionality con la IP y puerto correctos
+        function copyIP() {
+            const serverIP = "179.61.223.150:24391";
+            navigator.clipboard.writeText(serverIP).then(() => {
+                const buttons = document.querySelectorAll('[onclick="copyIP()"]');
+                buttons.forEach(btn => {
+                    const originalHTML = btn.innerHTML;
+                    if (btn.innerText.includes('Copiar IP')) {
+                        btn.innerHTML = `¡Copiado! <span class="material-symbols-outlined text-[18px]">check</span>`;
+                    } else {
+                        btn.innerHTML = `¡Copiado!`;
+                    }
+                    setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
+                });
+            }).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+        let currentData = [];
+
+        // Cargar datos y consultar la API de Modrinth (respetando imágenes locales)
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                
+                currentData = data;
+
+                // Procesamos las imágenes en segundo plano
+                const promesasImagenes = currentData.map(async (item) => {
+                    // SI YA TIENE UNA RUTA LOCAL ASSETS/ EN EL JSON, NO LLAMA A LA API y mantiene tu archivo descargado
+                    if (item.imagenes && item.imagenes.length > 0 && item.imagenes[0].startsWith('assets/')) {
+                        return; 
+                    }
+
+                    // De lo contrario, sigue usando la API directa de Modrinth automáticamente
+                    try {
+                        const resModrinth = await fetch(`https://api.modrinth.com/v2/project/${item.id}`);
+                        if (resModrinth.ok) {
+                            const dataModrinth = await resModrinth.json();
+                            if (dataModrinth.icon_url) {
+                                item.imagenes = [dataModrinth.icon_url];
+                                return;
+                            }
+                        }
+                    } catch (e) {
+                        console.error(`Error al traer imagen de Modrinth para ${item.id}:`, e);
+                    }
+                    
+                    // Imagen por defecto solo si falla la API y tampoco tiene ruta local
+                    if (!item.imagenes || item.imagenes.length === 0) {
+                        item.imagenes = ['https://placehold.co/600x400/eceef0/6d797d?text=Minecraft'];
+                    }
+                });
+
+                // Esperamos que terminen las verificaciones y renderizamos
+                await Promise.all(promesasImagenes);
+                renderGrid(currentData);
+
+            } catch (error) {
+                console.error("Error loading data:", error);
+                document.getElementById('contentGrid').innerHTML = `
+                    <div class="col-span-full py-xl text-center">
+                        <span class="material-symbols-outlined text-error text-4xl mb-2">error</span>
+                        <p class="text-error font-body-lg">Error al cargar el contenido.</p>
+                        <p class="text-on-surface-variant mt-2">Asegúrate de que 'data.json' esté disponible.</p>
+                    </div>`;
+            }
+        }
+       function renderGrid(items) {
+    const grid = document.getElementById('contentGrid');
+    grid.innerHTML = '';
+    
+    if (!items || items.length === 0) {
+        grid.innerHTML = '<p class="text-on-surface-variant col-span-full text-center py-xl">No se encontraron resultados.</p>';
+        return;
+    }
+
+    items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'bg-surface-container-lowest rounded-[16px] ambient-shadow cursor-pointer flex flex-col overflow-hidden h-full transform transition-transform hover:scale-[1.02]';
+        card.onclick = () => openModal(item);
+        
+        const imageUrl = (item.imagenes && item.imagenes.length > 0) ? item.imagenes[0] : 'https://placehold.co/600x400/eceef0/6d797d?text=Sin+Imagen';
+
+        card.innerHTML = `
+            <div class="w-full h-48 bg-surface-container relative">
+                <div style="background-image: url('${imageUrl}')" class="bg-cover bg-center w-full h-full rounded-t-[16px]"></div>
+                <span class="absolute top-2 right-2 font-label-sm text-xs bg-surface-container-lowest/90 px-3 py-1 rounded-full capitalize text-primary font-bold shadow-sm">${item.categoria || 'Mod'}</span>
+            </div>
+            <div class="p-[24px] flex flex-col flex-grow">
+                <div class="text-xs font-semibold text-primary/80 uppercase tracking-wider mb-1">${item.subcategoria || ''}</div>
+                <h3 class="font-headline-md text-[18px] text-on-surface mb-2 truncate">${item.nombre}</h3>
+                <p class="font-body-md text-sm text-on-surface-variant line-clamp-2 leading-relaxed">${item.descripcion_corta || 'Sin descripción disponible.'}</p>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+        // Debounce Function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Filter Logic Corregido para manejar mayúsculas del JSON ("Mod", "Shader", "Textura")
+        const handleSearchInput = debounce(applyFilters, 300);
+        document.getElementById('searchInput').addEventListener('input', handleSearchInput);
+
+        document.querySelectorAll('.filter-chip').forEach(chip => {
+            chip.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-chip').forEach(c => {
+                    c.classList.remove('active', 'bg-primary-container', 'text-on-primary');
+                    c.classList.add('bg-surface-container', 'text-on-surface-variant');
+                });
+                
+                const target = e.currentTarget;
+                target.classList.add('active', 'bg-primary-container', 'text-on-primary');
+                target.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+                applyFilters();
+            });
+        });
+
+        function applyFilters() {
+    if (!currentData || currentData.length === 0) return;
+
+    const term = document.getElementById('searchInput').value.toLowerCase().trim();
+    const activeChip = document.querySelector('.filter-chip.active');
+    const category = activeChip ? activeChip.dataset.category : 'all';
+    
+    const filtered = currentData.filter(item => {
+        const matchesSearch = item.nombre.toLowerCase().includes(term) || 
+                              (item.descripcion_corta && item.descripcion_corta.toLowerCase().includes(term));
+        
+        let matchesCat = false;
+        const itemCat = (item.categoria || '').toLowerCase().trim();
+        
+        if (category === 'all') {
+            matchesCat = true;
+        } else if (category === 'texturas') {
+            // Empareja tanto "Textura" del JSON como "texturas" del chip del HTML
+            matchesCat = itemCat.includes('textura') || itemCat.includes('resource');
+        } else if (category === 'shaders') {
+            matchesCat = itemCat.includes('shader');
+        } else if (category === 'mods') {
+            matchesCat = itemCat.includes('mod') && !itemCat.includes('shader');
+        } else {
+            matchesCat = itemCat === category;
+        }
+        
+        return matchesSearch && matchesCat;
+    });
+    
+    renderGrid(filtered);
+}
+
+        // Modal Logic Limpio sin el botón genérico de Descargar del footer
+        const modal = document.getElementById('detailsModal');
+        const modalContent = document.getElementById('modalContent');
+        
+        function openModal(item) {
+            document.getElementById('modalTitle').textContent = item.nombre;
+            document.getElementById('modalDesc').textContent = item.descripcion_larga || item.descripcion_corta || 'Sin descripción detallada.';
+            
+            const mediaContainer = document.getElementById('modalMedia');
+            if (item.url_youtube) {
+                let embedUrl = item.url_youtube;
+                if(embedUrl.includes('watch?v=')) {
+                    embedUrl = embedUrl.replace('watch?v=', 'embed/');
+                }
+                mediaContainer.innerHTML = `<iframe class="w-full h-full" src="${embedUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            } else if (item.imagenes && item.imagenes.length > 0) {
+                mediaContainer.innerHTML = `<div style="background-image: url('${item.imagenes[0]}')" class="bg-cover bg-center w-full h-full"></div>`;
+            } else {
+                mediaContainer.innerHTML = `<div class="text-on-surface-variant flex items-center justify-center h-full bg-surface-container"><span class="material-symbols-outlined text-4xl mb-2 block text-center w-full">image_not_supported</span></div>`;
+            }
+
+            const guidesContainer = document.getElementById('modalGuidesContainer');
+            const guidesList = document.getElementById('modalGuides');
+            if (item.guias && item.guias.length > 0) {
+                guidesList.innerHTML = item.guias.map(g => `<li>${g}</li>`).join('');
+                guidesContainer.classList.remove('hidden');
+                guidesContainer.classList.add('block');
+            } else {
+                guidesContainer.classList.add('hidden');
+                guidesContainer.classList.remove('block');
+            }
+
+            // === AQUÍ ESTÁ EL ARREGLO PARA EL BOTÓN "VISITAR SITIO" ===
+            const visitarSitioBtn = document.getElementById('modalExternalLinkBtn');
+            if (visitarSitioBtn) {
+                if (item.url_descarga) {
+                    visitarSitioBtn.onclick = () => {
+                        window.open(item.url_descarga, '_blank');
+                    };
+                    visitarSitioBtn.style.display = 'flex'; // Asegura que se vea si hay link
+                } else {
+                    visitarSitioBtn.onclick = null;
+                    visitarSitioBtn.style.display = 'none'; // Lo oculta si el mod no tiene link oficial
+                }
+            }
+            // =========================================================
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+                document.getElementById('modalMedia').innerHTML = '';
+            }, 300);
+        }
+
+        async function updateServerStatus() {
+    // Apuntamos a tu IP y puerto reales
+    const serverIP = "179.61.223.150:24391";
+    const statusContainer = document.getElementById('server-status-container');
+    
+    if (!statusContainer) return;
+
+    // Estado de carga mientras consulta la API
+    statusContainer.innerHTML = `<span class="material-symbols-outlined animate-spin text-[16px]">refresh</span> Consultando...`;
+    
+    try {
+        const response = await fetch(`https://api.mcsrvstat.us/2/${serverIP}`);
+        const data = await response.json();
+        
+        if (data.online) {
+            // Servidor encendido: Punto verde parpadeante y cantidad de jugadores
+            statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> ${data.players.online} / ${data.players.max} Jugadores`;
+            // Aplicamos colores verdes al fondo y texto
+            statusContainer.className = "hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 rounded-full bg-green-100 text-green-700 border border-green-200 shadow-sm";
+        } else {
+            // Servidor apagado: Punto rojo
+            statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-red-500"></span> Servidor Offline`;
+            // Aplicamos colores rojos al fondo y texto
+            statusContainer.className = "hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 rounded-full bg-red-100 text-red-700 border border-red-200 shadow-sm";
+        }
+    } catch (error) {
+        // Si falla la API
+        statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-neutral-500"></span> Estado desconocido`;
+    }
+}
+
+        // Inicialización única al cargar el DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            updateServerStatus();
+        });
+    </script>
