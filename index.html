@@ -189,51 +189,57 @@
 </head>
 <body class="min-h-screen flex flex-col font-body-md text-body-md text-on-surface">
 <!-- TopNavBar -->
-<header class="bg-surface-container-lowest dark:bg-surface-container-lowest shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
-<div class="max-w-7xl mx-auto px-gutter flex justify-between items-center h-20">
-<!-- Brand Logo -->
-<!-- Brand Logo -->
-<a href="#" class="flex items-center gap-3 transition-transform hover:scale-105">
-    <!-- Cambiá 'tu_logo.png' por el nombre real de tu archivo -->
-    <img src="/assets/images/nahuelitoLOGO.png" alt="Logo Nahuelito" class="h-20 w-auto object-contain">
-    <!-- Si querés que también diga el nombre al lado, dejá la línea de abajo. Si solo querés la imagen, borrala. -->
-    <span class="font-headline-md text-xl font-bold tracking-tighter text-primary dark:text-primary-fixed-dim">Nahuelito</span>
-</a>
-<!-- Navigation Links (Desktop) -->
-<nav class="hidden md:flex gap-md h-full items-center">
-<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-bold h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#">Inicio</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods">Mods</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods" onclick="document.querySelector('[data-category=\'shaders\']').click()">Shaders</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim h-full flex items-center px-4 hover:bg-surface-container-low dark:hover:bg-surface-container-high" href="#mods" onclick="document.querySelector('[data-category=\'texturas\']').click()">Recursos</a>
-</nav>
-<!-- Trailing Actions -->
-<!-- Trailing Actions -->
-<div class="flex items-center gap-sm">
-<span id="server-status-container" class="hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant">
-    <span class="w-2 h-2 rounded-full bg-green-500"></span> Servidor Activo
-</span>
-<button class="font-label-sm text-label-sm bg-primary-container text-on-primary hover:opacity-90 px-4 py-2 rounded-lg hidden md:flex items-center gap-2" onclick="copyIP()">
-                    179.61.223.150:24391
-                    <span class="material-symbols-outlined text-[18px]">content_copy</span>
-</button>
-<!-- Mobile Menu Button -->
-<button class="md:hidden text-on-surface p-2 rounded-lg hover:bg-surface-container" id="mobileMenuBtn" onclick="toggleMobileMenu()">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-<!-- Mobile Menu -->
-<div class="md:hidden bg-surface-container-lowest border-t border-surface-variant" id="mobileMenu">
-<div class="px-gutter py-4 flex flex-col gap-4">
-<a class="font-label-sm text-primary font-bold" href="#" onclick="toggleMobileMenu()">Inicio</a>
-<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'mods\']').click()">Mods</a>
-<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'shaders\']').click()">Shaders</a>
-<a class="font-label-sm text-on-surface-variant" href="#mods" onclick="toggleMobileMenu(); document.querySelector('[data-category=\'texturas\']').click()">Recursos</a>
-<button class="font-label-sm text-label-sm bg-primary-container text-on-primary hover:opacity-90 px-4 py-2 rounded-lg flex items-center gap-2 w-max" onclick="copyIP()">
+<!-- Encabezado de Navegación -->
+<header class="relative z-50 w-full bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 transition-transform hover:scale-105">
+                <img src="/assets/images/nahuelitoLOGO.png" alt="Logo Nahuelito" class="h-20 w-auto object-contain">
+                <span class="font-bold text-xl text-[#00687a]">Nahuelito</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Inicio</a>
+                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Mods</a>
+                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Shaders</a>
+                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Recursos</a>
+            </nav>
+
+            <!-- Status & Action (Desktop) -->
+            <div class="hidden md:flex items-center gap-4">
+                <div id="server-status-container"></div>
+                <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded font-medium flex items-center gap-2">
+                    Copiar IP <span class="material-symbols-outlined text-sm">content_copy</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-[#00687a] focus:outline-none p-2">
+                    <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-xl md:hidden">
+        <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Inicio</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Mods</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Shaders</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Recursos</a>
+            
+            <div class="pt-4 flex flex-col gap-3 border-t border-gray-200">
+                <!-- El script debe inyectar el estado del servidor aquí también si es necesario, o puedes dejarlo oculto en móvil -->
+                <button class="w-full bg-cyan-500 text-white px-4 py-3 rounded font-medium flex justify-center items-center gap-2">
                     Copiar IP (179.61.223.150:24391)
-                    <span class="material-symbols-outlined text-[18px]">content_copy</span>
-</button>
-</div>
-</div>
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- Main Content Canvas -->
 <main class="flex-grow w-full">
@@ -778,4 +784,18 @@
             loadData();
             updateServerStatus();
         });
+
+        
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+            icon.textContent = 'menu';
+        } else {
+            icon.textContent = 'close';
+        }
+    });
     </script>
