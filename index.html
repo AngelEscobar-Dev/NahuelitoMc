@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-
 <html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Nahuelito Minecraft Server</title>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
         tailwind.config = {
@@ -83,6 +79,7 @@
                         "container-max": "1200px"
                     },
                     fontFamily: {
+                        "legend": ["'Cinzel Decorative'", "serif"],
                         "headline-md": ["Space Grotesk"],
                         "body-md": ["Inter"],
                         "body-lg": ["Inter"],
@@ -109,11 +106,30 @@
             color: theme('colors.on-surface');
             -webkit-font-smoothing: antialiased;
             scroll-behavior: smooth;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         /* Material Symbols Outline Class */
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Dark Mode Overrides */
+        .dark body { background-color: #0f172a; color: #f1f5f9; }
+        .dark .bg-white { background-color: #1e293b !important; border-color: #334155 !important; }
+        .dark .text-gray-700, .dark .text-slate-600 { color: #cbd5e1 !important; }
+        .dark .bg-\[\#f8fafc\] { background-color: #0f172a !important; }
+        .dark .border-slate-200, .dark .border-surface-variant { border-color: #334155 !important; }
+        .dark .bg-surface-container-lowest, .dark .bg-surface-container, .dark .bg-surface-bright { background-color: #1e293b !important; color: #f1f5f9 !important; border-color: #334155 !important; }
+        .dark .text-on-surface, .dark .text-on-surface-variant { color: #cbd5e1 !important; }
+        .dark header.bg-white { background-color: #0f172a !important; border-bottom-color: #1e293b !important; }
+        .dark #mobile-menu { background-color: #0f172a !important; border-bottom-color: #1e293b !important; }
+
+        /* Filter Chips Active State */
+        .filter-chip.active {
+            background-color: #06b6d4 !important; 
+            color: #ffffff !important;
+            border-color: transparent !important;
         }
 
         /* Card Ambient Shadow */
@@ -188,75 +204,69 @@
     </style>
 </head>
 <body class="min-h-screen flex flex-col font-body-md text-body-md text-on-surface">
-<!-- TopNavBar -->
-<!-- Encabezado de Navegación -->
-<header class="relative z-50 w-full bg-white border-b border-gray-200">
+<header class="relative z-50 w-full bg-white border-b border-gray-200 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-            <!-- Brand Logo -->
-            <a href="#" class="flex items-center gap-3 transition-transform hover:scale-105">
+            <a href="#" onclick="window.scrollTo(0,0); return false;" class="flex items-center gap-3 transition-transform hover:scale-105">
                 <img src="/assets/images/nahuelitoLOGO.png" alt="Logo Nahuelito" class="h-20 w-auto object-contain">
-                <span class="font-bold text-xl text-[#00687a]">Nahuelito</span>
+                <span class="font-legend font-bold text-2xl text-[#00687a] dark:text-cyan-400">Nahuelito</span>
             </a>
 
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Inicio</a>
-                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Mods</a>
-                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Shaders</a>
-                <a href="#" class="text-gray-700 hover:text-[#00687a] font-medium">Recursos</a>
+                <a href="#" onclick="window.scrollTo(0,0); return false;" class="text-gray-700 hover:text-[#00687a] font-medium transition-colors">Inicio</a>
+                <a href="#mods" class="text-gray-700 hover:text-[#00687a] font-medium transition-colors">Mods</a>
+                <a href="#mods" class="text-gray-700 hover:text-[#00687a] font-medium transition-colors">Shaders</a>
+                <a href="#mods" class="text-gray-700 hover:text-[#00687a] font-medium transition-colors">Texturas</a>
             </nav>
 
-            <!-- Status & Action (Desktop) -->
             <div class="hidden md:flex items-center gap-4">
+                <button onclick="toggleTheme()" class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors">
+                    <span class="material-symbols-outlined theme-icon">dark_mode</span>
+                </button>
                 <div id="server-status-container"></div>
-                <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded font-medium flex items-center gap-2">
+                <button onclick="copyIP()" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded font-medium flex items-center gap-2">
                     Copiar IP <span class="material-symbols-outlined text-sm">content_copy</span>
                 </button>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="flex items-center md:hidden">
-                <button id="mobile-menu-button" class="text-gray-700 hover:text-[#00687a] focus:outline-none p-2">
+            <div class="flex items-center gap-2 md:hidden">
+                <button onclick="toggleTheme()" class="p-2 rounded-full text-gray-600 dark:text-gray-300">
+                    <span class="material-symbols-outlined theme-icon">dark_mode</span>
+                </button>
+                <button id="mobile-menu-button" class="text-gray-700 dark:text-gray-300 hover:text-[#00687a] focus:outline-none p-2">
                     <span class="material-symbols-outlined text-3xl block" id="menu-icon">menu</span>
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Mobile Menu Dropdown -->
     <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-xl md:hidden">
         <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Inicio</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Mods</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Shaders</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50">Recursos</a>
+            <a href="#" onclick="window.scrollTo(0,0); document.getElementById('mobile-menu').classList.add('hidden'); return false;" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50 dark:hover:bg-slate-700">Inicio</a>
+            <a href="#mods" onclick="document.getElementById('mobile-menu').classList.add('hidden');" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50 dark:hover:bg-slate-700">Mods</a>
+            <a href="#mods" onclick="document.getElementById('mobile-menu').classList.add('hidden');" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50 dark:hover:bg-slate-700">Shaders</a>
+            <a href="#mods" onclick="document.getElementById('mobile-menu').classList.add('hidden');" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#00687a] hover:bg-gray-50 dark:hover:bg-slate-700">Texturas</a>
             
-            <div class="pt-4 flex flex-col gap-3 border-t border-gray-200">
-                <!-- El script debe inyectar el estado del servidor aquí también si es necesario, o puedes dejarlo oculto en móvil -->
-                <button class="w-full bg-cyan-500 text-white px-4 py-3 rounded font-medium flex justify-center items-center gap-2">
+            <div class="pt-4 flex flex-col gap-3 border-t border-gray-200 dark:border-gray-700">
+                <button onclick="copyIP()" class="w-full bg-cyan-500 text-white px-4 py-3 rounded font-medium flex justify-center items-center gap-2">
                     Copiar IP (179.61.223.150:24391)
                 </button>
             </div>
         </div>
     </div>
 </header>
-<!-- Main Content Canvas -->
 <main class="flex-grow w-full">
-<!-- Hero Section -->
 <section class="relative w-full overflow-hidden bg-gradient-to-b from-[#0b1315] to-[#00687a] py-xl border-none">
-        <div class="absolute inset-0 z-0 opacity-10 mix-blend-overlay pointer-events-none">
-        <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWt1UrDWrHOOvsYEc0BRl0VrvGrr4jLljsL9Ar4U2X3IhtOfpr8OdB2TL1QvVfkYF2gEtLUN4Y3o4Hn8xyojYLUMCNL0v4Hcgb6SEc9jboGdU7ZsdjNPMHmfbTiaSERursSD3mJD3Rm1vebRP1FhxV9kpY5PXe2-T4r44vX1KKqsAssfoPeyhlYcueDPO1pYhTKVMtSjctj4_VDQdld0Nttx1g6X5OqiOrK35kyNP1rfDMHep0z3g46k5R8I_281Slu298he0ABIC3')"></div>
+        <div class="absolute inset-0 z-0 opacity-40 mix-blend-overlay pointer-events-none">
+        <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://images.hdqwalls.com/download/minecraft-2020-4k-7f-1920x1080.jpg')"></div>
     </div>
     
-    <!-- Contenedor Principal -->
     <div class="relative z-10 max-w-container-max mx-auto px-gutter md:px-lg flex flex-col items-center text-center">
-        <!-- Badge de la Comunidad -->
         <span class="font-label-sm text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-4 py-1.5 rounded-full uppercase tracking-widest mb-sm backdrop-blur-sm">
             Comunidad Meicraft
         </span>
         
-        <h1 class="text-3xl md:text-5xl font-bold !text-white tracking-tight mb-4">
+        <h1 class="text-3xl md:text-5xl font-legend font-bold !text-white tracking-tight mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
     Nahuelito Server
 </h1>
         
@@ -277,11 +287,9 @@
     </div>
 </section>
 
-<!-- === SECCIÓN DE INTRODUCCIÓN === -->
 <section class="w-full bg-gradient-to-b from-[#00687a] via-[#f7f9fb] to-[#f7f9fb] dark:via-[#0f172a] dark:to-[#0f172a] pt-0 pb-0">
     <div class="max-w-container-max mx-auto px-gutter md:px-lg flex flex-col gap-16 md:gap-24 pt-16">
         
-        <!-- Panel 1: Bienvenida -->
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div class="flex-1 space-y-4">
                 <h2 class="font-display-lg-mobile md:font-display-lg text-white font-bold drop-shadow-md">
@@ -295,7 +303,6 @@
                 <img src="https://i.blogs.es/2c7534/minecraft/1200_800.webp" alt="Bienvenida Nahuelito" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">              </div>
         </div>
 
-        <!-- Panel 2: Exploración -->
         <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
             <div class="flex-1 space-y-4">
                 <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
@@ -310,7 +317,6 @@
             </div>
         </div>
 
-        <!-- Panel 3: Construcción -->
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div class="flex-1 space-y-4">
                 <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
@@ -325,7 +331,6 @@
             </div>
         </div>
 
-        <!-- Panel 4: Comunidad -->
         <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
             <div class="flex-1 space-y-4">
                 <h2 class="font-display-lg-mobile md:font-display-lg text-primary dark:text-primary-fixed-dim font-bold">
@@ -342,9 +347,7 @@
 
     </div>
 
-   <!-- === SLIDER INFINITO ANIMADO E INTERACTIVO === -->
-    <!-- Estilos inyectados localmente para evitar conflictos con Tailwind -->
-    <style>
+   <style>
         @keyframes scroll-marquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -367,13 +370,10 @@
 
     <div class="contenedor-interactivo relative w-full mt-24 bg-[#050505] border-y border-cyan-900 overflow-hidden py-6 z-10">
         
-        <!-- Sombras laterales -->
         <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#050505] to-transparent z-20 pointer-events-none"></div>
         <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-20 pointer-events-none"></div>
         
-        <!-- Pista de animación -->
         <div class="animacion-infinita">
-            <!-- Set 1 -->
             <div class="flex items-center gap-12 px-6 text-cyan-300 font-label-sm text-lg tracking-[0.2em] uppercase whitespace-nowrap">
                 <span>Vanilla Plus</span>
                 <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
@@ -390,7 +390,6 @@
                 <span>Economía</span>
                 <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
             </div>
-            <!-- Set 2 -->
             <div class="flex items-center gap-12 px-6 text-cyan-300 font-label-sm text-lg tracking-[0.2em] uppercase whitespace-nowrap">
                 <span>Vanilla Plus</span>
                 <span class="text-cyan-700/50 material-symbols-outlined text-sm">close</span>
@@ -410,31 +409,24 @@
         </div>
     </div>
 </section>
-<!-- === FIN SECCIÓN DE INTRODUCCIÓN === -->
-
-<!-- Search & Filter Section -->
-<section class="w-full bg-[#f8fafc] dark:bg-[#0f172a] border-t border-slate-200/60 py-xl" id="mods">
+<section class="w-full bg-[#f8fafc] border-t border-slate-200/60 py-xl" id="mods">
     <div class="max-w-container-max mx-auto px-gutter md:px-lg">
         
         <div class="flex flex-col md:flex-row gap-md items-center justify-between mb-xl">
-            <!-- Search Input -->
             <div class="relative w-full md:w-96">
                 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
                 <input class="w-full bg-white border border-slate-200 text-on-surface font-body-md pl-10 pr-4 py-3 rounded-xl focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container shadow-sm" id="searchInput" placeholder="Buscar mods, shaders..." type="text"/>
             </div>
             
-            <!-- Category Chips -->
             <div class="flex gap-2 overflow-x-auto w-full md:w-auto no-scrollbar pb-2 md:pb-0">
-                <button class="filter-chip active font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-primary-container text-on-primary whitespace-nowrap shadow-sm" data-category="all">Todos</button>
+                <button class="filter-chip active font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-primary-container text-on-primary border-transparent whitespace-nowrap shadow-sm" data-category="all">Todos</button>
                 <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="mods">Mods</button>
                 <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="shaders">Shaders</button>
                 <button class="filter-chip font-label-sm text-label-sm px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-600 whitespace-nowrap hover:bg-slate-50 shadow-sm" data-category="texturas">Texturas</button>
             </div>
         </div>
 
-        <!-- Dynamic Grid for Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-md" id="contentGrid">
-            <!-- Loader -->
             <div class="col-span-full flex justify-center py-xl">
                 <span class="material-symbols-outlined animate-spin text-primary-container text-4xl">autorenew</span>
             </div>
@@ -443,12 +435,10 @@
     </div>
 </section>
 </main>
-<!-- Footer -->
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-surface-container-highest full-width mt-xl">
+<footer class="bg-surface-container full-width mt-xl">
     <div class="max-w-7xl mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-center gap-md">
         <div>
-            <div class="font-headline-md text-headline-md text-on-surface dark:text-on-surface mb-base">
+            <div class="font-headline-md text-headline-md text-on-surface mb-base">
                 Meicraft
             </div>
             <p class="font-body-md text-body-md text-on-surface-variant">
@@ -456,40 +446,31 @@
             </p>
         </div>
         <div class="flex gap-md">
-            <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:underline decoration-primary flex items-center gap-1" href="https://discord.gg/u5SZYNgQJ" target="_blank">
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline decoration-primary flex items-center gap-1" href="https://discord.gg/u5SZYNgQJ" target="_blank">
                 <span class="material-symbols-outlined text-[18px]">forum</span> Unirse al Discord
             </a>
         </div>
     </div>
 </footer>
-<!-- Details Modal -->
 <div class="fixed inset-0 z-[100] hidden items-center justify-center" id="detailsModal">
-<!-- Backdrop -->
 <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
-<!-- Modal Content -->
 <div class="relative bg-surface-container-lowest w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-xl mx-4 ambient-shadow flex flex-col transform scale-95 opacity-0 transition-all duration-300 ease-out" id="modalContent">
-<!-- Header -->
 <div class="sticky top-0 bg-surface-container-lowest z-10 px-md py-4 border-b border-surface-variant flex justify-between items-center rounded-t-xl">
 <h2 class="font-headline-md text-headline-md text-primary m-0" id="modalTitle">Mod Name</h2>
 <button class="text-on-surface-variant hover:text-error transition-colors p-2 rounded-full hover:bg-surface-variant" onclick="closeModal()">
 <span class="material-symbols-outlined">close</span>
 </button>
 </div>
-<!-- Body -->
 <div class="p-md flex flex-col gap-lg">
-<!-- Video/Image Placeholder -->
 <div class="w-full aspect-video bg-surface-container rounded-lg overflow-hidden flex items-center justify-center" id="modalMedia"></div>
-<!-- Description -->
 <div>
 <h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Descripción</h3>
 <p class="font-body-md text-body-md text-on-surface whitespace-pre-line" id="modalDesc"></p>
 </div>
-<!-- Guides -->
 <div class="bg-surface-bright p-sm rounded-lg border border-surface-variant hidden" id="modalGuidesContainer">
 <h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2">Guías y Notas</h3>
 <ul class="list-disc list-inside font-body-md text-body-md text-on-surface space-y-1" id="modalGuides"></ul>
 </div>
-<!-- Enlace Externo Oficial -->
 <div class="bg-surface-bright p-sm rounded-lg border border-surface-variant flex items-center justify-between">
 <div>
 <h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1">Página Oficial del Proyecto</h3>
@@ -500,13 +481,28 @@
 </a>
 </div>
 </div>
-<!-- Footer Actions -->
-<!-- Footer Actions -->
 <div class="sticky bottom-0 px-md py-4 border-t border-surface-variant flex justify-end gap-sm bg-surface-bright rounded-b-xl">
 <button class="font-label-sm text-label-sm px-4 py-2 text-primary hover:bg-surface-variant rounded-lg" onclick="closeModal()">Cerrar</button>
 </div>
-<!-- Scripts -->
 <script>
+        // Tema Oscuro / Claro
+        const htmlElement = document.documentElement;
+        function toggleTheme() {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                document.querySelectorAll('.theme-icon').forEach(icon => icon.textContent = 'dark_mode');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                document.querySelectorAll('.theme-icon').forEach(icon => icon.textContent = 'light_mode');
+            }
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+            document.querySelectorAll('.theme-icon').forEach(icon => icon.textContent = 'light_mode');
+        }
+
         // Copy IP Functionality con la IP y puerto correctos
         function copyIP() {
             const serverIP = "179.61.223.150:24391";
@@ -627,20 +623,20 @@
             };
         }
 
-        // Filter Logic Corregido para manejar mayúsculas del JSON ("Mod", "Shader", "Textura")
+        // Filter Logic
         const handleSearchInput = debounce(applyFilters, 300);
         document.getElementById('searchInput').addEventListener('input', handleSearchInput);
 
         document.querySelectorAll('.filter-chip').forEach(chip => {
             chip.addEventListener('click', (e) => {
                 document.querySelectorAll('.filter-chip').forEach(c => {
-                    c.classList.remove('active', 'bg-primary-container', 'text-on-primary');
-                    c.classList.add('bg-surface-container', 'text-on-surface-variant');
+                    c.classList.remove('active', 'bg-primary-container', 'text-on-primary', 'border-transparent');
+                    c.classList.add('bg-white', 'border-slate-200', 'text-slate-600');
                 });
                 
                 const target = e.currentTarget;
-                target.classList.add('active', 'bg-primary-container', 'text-on-primary');
-                target.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                target.classList.add('active', 'bg-primary-container', 'text-on-primary', 'border-transparent');
+                target.classList.remove('bg-white', 'border-slate-200', 'text-slate-600');
 
                 applyFilters();
             });
@@ -663,7 +659,6 @@
         if (category === 'all') {
             matchesCat = true;
         } else if (category === 'texturas') {
-            // Empareja tanto "Textura" del JSON como "texturas" del chip del HTML
             matchesCat = itemCat.includes('textura') || itemCat.includes('resource');
         } else if (category === 'shaders') {
             matchesCat = itemCat.includes('shader');
@@ -679,7 +674,7 @@
     renderGrid(filtered);
 }
 
-        // Modal Logic Limpio sin el botón genérico de Descargar del footer
+        // Modal Logic
         const modal = document.getElementById('detailsModal');
         const modalContent = document.getElementById('modalContent');
         
@@ -711,20 +706,18 @@
                 guidesContainer.classList.remove('block');
             }
 
-            // === AQUÍ ESTÁ EL ARREGLO PARA EL BOTÓN "VISITAR SITIO" ===
             const visitarSitioBtn = document.getElementById('modalExternalLinkBtn');
             if (visitarSitioBtn) {
                 if (item.url_descarga) {
                     visitarSitioBtn.onclick = () => {
                         window.open(item.url_descarga, '_blank');
                     };
-                    visitarSitioBtn.style.display = 'flex'; // Asegura que se vea si hay link
+                    visitarSitioBtn.style.display = 'flex'; 
                 } else {
                     visitarSitioBtn.onclick = null;
-                    visitarSitioBtn.style.display = 'none'; // Lo oculta si el mod no tiene link oficial
+                    visitarSitioBtn.style.display = 'none'; 
                 }
             }
-            // =========================================================
             
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -749,13 +742,11 @@
         }
 
         async function updateServerStatus() {
-    // Apuntamos a tu IP y puerto reales
     const serverIP = "179.61.223.150:24391";
     const statusContainer = document.getElementById('server-status-container');
     
     if (!statusContainer) return;
 
-    // Estado de carga mientras consulta la API
     statusContainer.innerHTML = `<span class="material-symbols-outlined animate-spin text-[16px]">refresh</span> Consultando...`;
     
     try {
@@ -763,18 +754,13 @@
         const data = await response.json();
         
         if (data.online) {
-            // Servidor encendido: Punto verde parpadeante y cantidad de jugadores
             statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> ${data.players.online} / ${data.players.max} Jugadores`;
-            // Aplicamos colores verdes al fondo y texto
             statusContainer.className = "hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 rounded-full bg-green-100 text-green-700 border border-green-200 shadow-sm";
         } else {
-            // Servidor apagado: Punto rojo
             statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-red-500"></span> Servidor Offline`;
-            // Aplicamos colores rojos al fondo y texto
             statusContainer.className = "hidden lg:flex items-center gap-2 font-label-sm text-label-sm px-4 py-2 rounded-full bg-red-100 text-red-700 border border-red-200 shadow-sm";
         }
     } catch (error) {
-        // Si falla la API
         statusContainer.innerHTML = `<span class="w-2 h-2 rounded-full bg-neutral-500"></span> Estado desconocido`;
     }
 }
@@ -799,3 +785,5 @@
         }
     });
     </script>
+</body>
+</html>
