@@ -257,30 +257,33 @@
     </div>
 </header>
 <main class="flex-grow w-full">
-<section class="relative w-full overflow-hidden bg-gradient-to-b from-[#0b1315] to-[#00687a] py-xl border-none">
-        <div class="absolute inset-0 z-0 opacity-40 mix-blend-overlay pointer-events-none">
-        <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://images.hdqwalls.com/download/minecraft-2020-4k-7f-1920x1080.jpg')"></div>
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-cyan-50 to-cyan-200 dark:from-[#0b1315] dark:to-[#00687a] py-32 border-none transition-colors duration-300">
+    
+    <!-- Imagen de Fondo Integrada -->
+<div class="absolute inset-0 z-0 opacity-40 mix-blend-luminosity dark:opacity-40 dark:mix-blend-overlay pointer-events-none transition-opacity duration-300">        <div class="bg-cover bg-center w-full h-full" style="background-image: url('assets/images/fondo.webp')"></div>
     </div>
     
-    <div class="relative z-10 max-w-container-max mx-auto px-gutter md:px-lg flex flex-col items-center text-center">
-        <span class="font-label-sm text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-4 py-1.5 rounded-full uppercase tracking-widest mb-sm backdrop-blur-sm">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-12 flex flex-col items-center text-center">
+        <span class="font-label-sm text-xs bg-cyan-600/10 text-cyan-700 dark:bg-cyan-500/20 dark:text-cyan-300 border border-cyan-500/30 px-4 py-1.5 rounded-full uppercase tracking-widest mb-4 backdrop-blur-sm shadow-sm dark:shadow-[0_0_15px_rgba(0,255,255,0.2)] transition-colors">
             Comunidad Meicraft
         </span>
         
-        <h1 class="text-3xl md:text-5xl font-legend font-bold !text-white tracking-tight mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-    Nahuelito Server
-</h1>
+        <!-- Textos dinámicos (Oscuro en modo claro, Blanco en modo oscuro) -->
+        <h1 class="text-4xl md:text-6xl font-legend font-bold text-slate-900 dark:text-white tracking-wider mb-6 drop-shadow-sm dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] transition-colors">
+            Nahuelito Server
+        </h1>
         
-        <p class="font-body-lg text-body-lg text-slate-300 max-w-2xl mx-auto mb-lg leading-relaxed drop-shadow">
+        <p class="font-body-lg text-lg text-slate-700 dark:text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-sm dark:drop-shadow-md transition-colors">
             Servidores de Minecraft hechos para jugar entre amigos, amigos de amigos y conocidos. Hosteamos en servidores de pago para garantizar el menor lag posible y mantener una administración activa. Todo a pulmón para viciar tranquilos.
         </p>
         
-        <div class="flex flex-wrap justify-center gap-sm">
-            <button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2 ambient-shadow hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-cyan-500/10" onclick="copyIP()">
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="bg-cyan-500 text-white px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:scale-[1.02] transition-transform shadow-md dark:shadow-[0_0_20px_rgba(0,255,255,0.3)]" onclick="copyIP()">
                 Copiar IP
                 <span class="material-symbols-outlined">content_copy</span>
             </button>
-            <a class="bg-white/5 border-2 border-white/10 text-white px-8 py-4 rounded-lg font-label-sm text-label-sm flex items-center gap-2 hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-sm" href="#mods">
+            <a class="bg-white/50 dark:bg-black/30 border border-slate-300 dark:border-white/20 text-slate-800 dark:text-white px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:bg-white/80 dark:hover:bg-white/10 transition-colors backdrop-blur-md" href="#mods">
                 Explorar Mods
                 <span class="material-symbols-outlined">explore</span>
             </a>
@@ -288,20 +291,23 @@
     </div>
 </section>
 
-<section class="w-full bg-gradient-to-b from-[#00687a] via-[#f7f9fb] to-[#f7f9fb] dark:via-[#0f172a] dark:to-[#0f172a] pt-0 pb-0">
+<!-- === SECCIÓN DE INTRODUCCIÓN === -->
+<section class="w-full bg-gradient-to-b from-cyan-200 via-[#f7f9fb] to-[#f7f9fb] dark:from-[#00687a] dark:via-[#0f172a] dark:to-[#0f172a] pt-0 pb-0 transition-colors duration-300">
     <div class="max-w-container-max mx-auto px-gutter md:px-lg flex flex-col gap-16 md:gap-24 pt-16">
         
+        <!-- Panel 1: Bienvenida -->
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div class="flex-1 space-y-4">
-                <h2 class="font-display-lg-mobile md:font-display-lg text-white font-bold drop-shadow-md">
+                <h2 class="font-display-lg-mobile md:font-display-lg text-slate-900 dark:text-white font-bold drop-shadow-sm transition-colors">
                     TE DAMOS LA BIENVENIDA
                 </h2>
-                <p class="font-body-lg text-white/90 leading-relaxed drop-shadow">
+                <p class="font-body-lg text-slate-700 dark:text-white/90 leading-relaxed drop-shadow-sm transition-colors">
                     Para empezar tu aventura de la mejor manera, te recomendamos establecer un campamento base seguro antes de que caiga la noche. Asegúrate de tener el paquete de mods correctamente instalado y configurado. Una vez adentro, reúne recursos básicos, alíate con otros jugadores y prepárate para los desafíos que la oscuridad trae consigo. ¡La supervivencia y la cooperación son claves!
                 </p>
             </div>
             <div class="flex-1 w-full aspect-video bg-black/20 rounded-2xl border border-white/20 shadow-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)] hover:border-cyan-400/50">
-                <img src="https://i.blogs.es/2c7534/minecraft/1200_800.webp" alt="Bienvenida Nahuelito" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">              </div>
+                <img src="https://i.blogs.es/2c7534/minecraft/1200_800.webp" alt="Bienvenida Nahuelito" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
         </div>
 
         <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
