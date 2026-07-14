@@ -1,497 +1,38 @@
 [
   {
-    "id": "adventurez",
-    "nombre": "AdventureZ",
+    "id": "voicechat",
+    "nombre": "Simple Voice Chat",
     "categoria": "Mod",
-    "subcategoria": "Exploración/Jefes",
-    "descripcion_corta": "Nuevos jefes y desafíos épicos.",
-    "descripcion_larga": "AdventureZ cambia por completo la experiencia de exploración en el endgame de Nahuelito. Introduce mecánicas avanzadas de combate y enemigos formidables que requieren estrategia. El jefe principal es el Blackstone Golem, una criatura masiva con una cantidad inmensa de vida que custodia tesoros invaluables en el Nether, obligando a los jugadores a cooperar para sobrevivir.",
-    "url_youtube": "https://www.youtube.com/embed/wjL_MsNzxeM",
-    "imagenes": ["https://cdn.modrinth.com/data/9E69VM6g/icon.png"],
-    "guias": [
-      "Para invocar o localizar al Blackstone Golem necesitarás explorar las estructuras del Nether.",
-      "Cuidado con su ataque de área en el suelo: causa daño crítico directo ignorando escudos básicos.",
-      "Al derrotarlo, soltará fragmentos esenciales para forjar la armadura y herramientas de Netherite mejorada.",
-      "Nota: Se recomienda ir en grupo de mínimo 3 jugadores equipados antes de iniciar el combate."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/adventurez",
-    "prioridad": 1
-  },
-  {
-    "id": "dungeons-arise",
-    "nombre": "When Dungeons Arise",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Estructuras",
-    "descripcion_corta": "Mazmorras masivas y estructuras imponentes.",
-    "descripcion_larga": "Este mod genera templos, palacios abandonados, aeronaves y fortalezas gigantescas de forma aleatoria por todo el mundo. Cada estructura cuenta con su propio ecosistema de generadores de monstruos y jefes menores, ofreciendo aventuras de exploración de alta dificultad y recompensas masivas imposibles de conseguir de otra manera.",
-    "url_youtube": "https://www.youtube.com/embed/wjBHOPOYdWU",
-    "imagenes": ["https://i.postimg.cc/R0gk61Fm/2021-07-11-17-34-23.png"],
-    "guias": [
-      "Las aeronaves y barcos voladores suelen tener los botines más raros, pero están repletos de arqueros.",
-      "Lleva suficientes antorchas o fuentes de luz, ya que las mazmorras subterráneas son extremadamente oscuras y extensas.",
-      "Los cofres al final de las estructuras suelen tener trampas de TNT; revisa los bloques de abajo antes de abrirlos."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise",
-    "prioridad": 2
-  },
-  {
-    "id": "incendium",
-    "nombre": "Incendium",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Nether",
-    "descripcion_corta": "Reforma masiva del Nether.",
-    "descripcion_larga": "Incendium redefine por completo la dimensión del Nether añadiendo biomas completamente nuevos, terrenos escarpados y estructuras masivas como castillos y ciudades flotantes de ceniza. Lo impresionante es que logra todo esto utilizando bloques nativos del juego, optimizando el rendimiento del servidor mientras cambia el lore de la dimensión.",
-    "url_youtube": "https://www.youtube.com/embed/V7RKDpXsdLk",
-    "imagenes": ["https://cdn.modrinth.com/data/7Wj7v68s/icon.png"],
-    "guias": [
-      "Busca los nuevos Castillos de Ash para enfrentarte a variantes mejoradas de los Wither Skeletons.",
-      "El bioma de los mares de lava ahora cuenta con puestos de avanzada flotantes propicios para saquear.",
-      "Lleva pociones de resistencia al fuego en todo momento; la nueva generación de terreno genera caídas de lava imprevistas."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/incendium",
-    "prioridad": 3
-  },
-  {
-    "id": "farmers-delight",
-    "nombre": "Farmer's Delight",
-    "categoria": "Mod",
-    "subcategoria": "Supervivencia/Cocina",
-    "descripcion_corta": "Expande la agricultura y cocina.",
-    "descripcion_larga": "Añade una hermosa y compleja variedad de cultivos, herramientas y recetas que transforman la alimentación del servidor. Ya no tendrás que comer solo chuletas o pan; ahora puedes preparar platos elaborados, guisos, y banquetes completos que otorgan efectos positivos prolongados a los jugadores.",
-    "url_youtube": "https://www.youtube.com/embed/Ms0OuO2iDbA",
-    "imagenes": ["https://cdn.modrinth.com/data/X073Sp1m/icon.png"],
-    "guias": [
-      "Fabrica el Cuchillo de Cocina para obtener materiales especiales como paja al cortar pasto o carne limpia de los animales.",
-      "Utiliza la Olla de Hierro sobre una fogata para cocinar recetas avanzadas como estofados que no se pueden hacer en hornos comunes.",
-      "Los platos de comida avanzada otorgan el efecto 'Confort', que regenera salud de a poco sin vaciar tu barra de hambre."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/farmers-delight",
-    "prioridad": 4
-  },
-  {
-    "id": "man-from-fog",
-    "nombre": "The Man From The Fog",
-    "categoria": "Mod",
-    "subcategoria": "Terror",
-    "descripcion_corta": "Una presencia aterradora te acecha.",
-    "descripcion_larga": "Introduce un factor psicológico y de terror en Nahuelito. Una criatura perturbadora y letal comenzará a acecharte desde la distancia durante las noches, tormentas o días de niebla intensa. No es un mod de monstruos comunes; este ser estudia tus movimientos antes de atacar directamente con una velocidad escalofriante.",
-    "url_youtube": "https://www.youtube.com/embed/jM-kkKdm1PU",
-    "imagenes": ["assets/images/fromthefog.webp"],
-    "guias": [
-      "Si escuchas un grito distorsionado o música de tensión ambiental, significa que la entidad te ha fijado como objetivo.",
-      "La criatura puede romper puertas de madera y trepar estructuras rápidamente; tu mejor defensa es un refugio de piedra bien iluminado.",
-      "En los primeros días del servidor, evita explorar a cielo abierto durante las tormentas eléctricas."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/the-man-from-the-fog",
-    "prioridad": 5
-  },
-  {
-    "id": "complementary-reimagined",
-    "nombre": "Complementary Reimagined",
-    "categoria": "Shader",
-    "subcategoria": "Gráficos",
-    "descripcion_corta": "Shaders equilibrados y modernos.",
-    "descripcion_larga": "Es el paquete de sombreadores oficial recomendado para mantener la estética cúbica de Minecraft pero llevándola a un nivel cinematográfico. Cuenta con nubes volumétricas hermosas, iluminación difusa de antorchas, agua cristalina con reflejos en tiempo real y efectos de niebla detallados que acompañan perfectamente a los mods de aventura.",
-    "url_youtube": "https://www.youtube.com/embed/8fJBjGzPyjw",
-    "imagenes": ["https://cdn.modrinth.com/data/M1959w3O/icon.png"],
-    "guias": [
-      "Totalmente compatible e integrado con los mods de optimización Iris y Sodium.",
-      "Puedes presionar la tecla 'K' en el juego para acceder rápidamente a las opciones de configuración del shader.",
-      "Si notas tirones, cambia el perfil preestablecido de 'Ultra' a 'Medium' dentro del menú de sombreadores."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/shaders/complementary-shaders-rebound",
-    "prioridad": 6
-  },
-  {
-    "id": "bsl-shaders",
-    "nombre": "BSL Shaders",
-    "categoria": "Shader",
-    "subcategoria": "Gráficos",
-    "descripcion_corta": "Estilo cinematográfico y personalizable.",
-    "descripcion_larga": "BSL Shaders le da un toque único y fantástico al juego mediante una paleta de colores cálida y una atmósfera brillante. Es ideal para los creadores de contenido del servidor debido a su renderizado suave de sombreado, oclusión ambiental impecable y personalización extrema de los efectos de lente y desenfoque de movimiento.",
-    "url_youtube": "https://www.youtube.com/embed/T9NilwbZlfk",
-    "imagenes": ["https://cdn.modrinth.com/data/g966w760/icon.png"],
-    "guias": [
-      "Habilita el efecto de 'Motion Blur' y 'Depth of Field' en la configuración si quieres tomar capturas cinematográficas.",
-      "Puedes desactivar la niebla interna si prefieres tener una visión clara y lejana en minas subterráneas.",
-      "Ajusta el color de la luz ambiental para adaptarlo a tus preferencias visuales en light mode."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/shaders/bsl-shaders",
-    "prioridad": 7
-  },
-  {
-    "id": "fresh-animations",
-    "nombre": "Fresh Animations",
-    "categoria": "Textura",
-    "subcategoria": "Animaciones",
-    "descripcion_corta": "Vida y movimiento para los mobs.",
-    "descripcion_larga": "Este paquete de recursos cambia por completo las animaciones rígidas del Minecraft original. Los aldeanos ahora gesticulan y muestran expresiones faciales, los zombies caminan de forma errática y pesada, y las criaturas pasivas como vacas o cerdos interactúan de forma fluida con el entorno, dando una sensación de vida increíble al servidor.",
-    "url_youtube": "https://www.youtube.com/embed/VLAal7WvUXk",
-    "imagenes": ["https://cdn.modrinth.com/data/mCOb967M/icon.png"],
-    "guias": [
-      "Obligatoriamente requiere que el servidor o tu cliente tengan instalado el mod 'Entity Model Features' (EMF).",
-      "En la lista de Resource Packs de tu menú, asegúrate de colocar esta textura arriba del todo para evitar conflictos.",
-      "No afecta el rendimiento de renderizado de bloques ya que solo modifica los esqueletos de animación de las entidades."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations",
-    "prioridad": 8
-  },
-  {
-    "id": "repurposed-structures",
-    "nombre": "Repurposed Structures",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Estructuras",
-    "descripcion_corta": "Variantes de estructuras por bioma.",
-    "descripcion_larga": "Toma las estructuras clásicas de Minecraft (como templos del desierto, puestos avanzados de saqueadores, pozos de mina y mazmorras) y crea variantes temáticas espectaculares basadas en el bioma en el que se generan. Encontraras templos de la jungla hechos de bambú o prisiones subterráneas personalizadas de piedra del Nether.",
-    "url_youtube": "https://www.youtube.com/embed/1Ia0C-kuenc",
-    "imagenes": ["assets/images/repurposed.webp"],
-    "guias": [
-      "Explora los océanos para descubrir templos sumergidos con mecánicas y trampas completamente rediseñadas.",
-      "Las aldeas en biomas raros como las montañas o pantanos cambian sus materiales de construcción adaptándose a la madera local.",
-      "Compatible con el sistema de mapas de cartógrafos para ubicar las nuevas variantes de fortalezas."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric",
-    "prioridad": 9
-  },
-  {
-    "id": "ad-astra",
-    "nombre": "Ad Astra",
-    "categoria": "Mod",
-    "subcategoria": "Tecnología/Espacio",
-    "descripcion_corta": "Exploración espacial y cohetes.",
-    "descripcion_larga": "El mod de tecnología espacial definitivo para el endgame de Nahuelito. Te permite construir refinerías, generar energía, automatizar recursos y fabricar cohetes espaciales para viajar fuera de la Tierra. Podrás colonizar la Luna, Marte, asteroides lejanos y establecer estaciones orbitales habitables con gravedad simulada.",
-    "url_youtube": "https://www.youtube.com/embed/D_uSt1WuHBo",
-    "imagenes": ["https://cdn.modrinth.com/data/Z97SWe8M/icon.png"],
-    "guias": [
-      "Comienza construyendo el Generador de Carbón y la Prensa de Placas para procesar los nuevos metales básicos.",
-      "Nunca despegues en un cohete sin verificar que lleves puestos tus tanques de oxígeno llenos y el traje espacial completo.",
-      "Establece un distribuidor de energía solar en la Luna para mantener activas tus máquinas de soporte vital sin gastar combustible."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/ad-astra",
-    "prioridad": 10
-  },
-  {
-    "id": "sophisticated-backpacks",
-    "nombre": "Sophisticated Backpacks",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Almacenamiento",
-    "descripcion_corta": "Mochilas avanzadas y modulares.",
-    "descripcion_larga": "Añade mochilas altamente funcionales que los jugadores pueden equipar en su ranura trasera. No es solo inventario extra; las mochilas se pueden mejorar con módulos tecnológicos internos que permiten recoger bloques del suelo automáticamente, comprimir materiales, alimentar al jugador e incluso incorporar herramientas de fundición portátiles.",
-    "url_youtube": "https://www.youtube.com/embed/AZBcD5DLtbs",
-    "imagenes": ["https://cdn.modrinth.com/data/9E9kW7b8/icon.png"],
-    "guias": [
-      "Puedes abrir tu mochila equipada en cualquier momento presionando la tecla de acceso rápido configurable (por defecto 'B').",
-      "Mejora los niveles de tu mochila utilizando hilos, cuero y posteriormente lingotes de hierro, oro y diamante para expandir sus ranuras.",
-      "Coloca un 'Módulo de Imán' dentro de la mochila para atraer los ítems del suelo directo a tu almacenamiento sin tener que caminar sobre ellos."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
-    "prioridad": 11
-  },
-  {
-    "id": "waystones",
-    "nombre": "Waystones",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Transporte",
-    "descripcion_corta": "Teletransporte rápido entre bases.",
-    "descripcion_larga": "Introduce monolitos de piedra antiguos que se pueden fabricar o encontrar en aldeas para habilitar un sistema logístico de teletransporte. Ideal para conectar las bases de distintas facciones o jugadores a lo largo del mapa masivo del servidor a cambio de una pequeña cantidad de niveles de experiencia o pergaminos consumibles.",
-    "url_youtube": "https://www.youtube.com/embed/qInjq7Xi0gc",
-    "imagenes": ["https://cdn.modrinth.com/data/9e37877b/icon.png"],
-    "guias": [
-      "Activa cada Waystone que encuentres en tus viajes interactuando con ella para agregarla permanentemente a tu lista global de rutas.",
-      "Fabrica 'Pergaminos de Retorno' (Warp Scrolls) para teletransportarte de vuelta a tu base desde cualquier rincón del mapa sin depender de un monolito físico secreto.",
-      "Puedes configurar tus monolitos como privados o compartidos para controlar quién tiene acceso al portal de tu base."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/waystones",
-    "prioridad": 12
-  },
-  {
-    "id": "tectonic",
-    "nombre": "Tectonic",
-    "categoria": "Mod",
-    "subcategoria": "Generación de Mundo",
-    "descripcion_corta": "Terrenos y montañas realistas.",
-    "descripcion_larga": "Tectonic modifica de raíz los algoritmos de generación de terrenos de Minecraft para crear cordilleras montañosas inmensas, acantilados colosales y ríos subterráneos fluidos que se extienden por kilómetros. Transforma el paisaje del servidor en un entorno imponente y suave, ideal para construir fortalezas épicas en la cima del mundo.",
-    "url_youtube": "https://www.youtube.com/embed/ZUq-_PTM0zI",
-    "imagenes": ["https://cdn.modrinth.com/data/6w8NWb68/icon.png"],
-    "guias": [
-      "Las cadenas montañosas generadas pueden alcanzar alturas superiores a los 250 bloques de altura; ve equipado para climas nevados.",
-      "Los ríos ahora son profundos y anchos, lo que facilita el transporte de barcos a través de largas distancias entre biomas.",
-      "Totalmente compatible con mods de estructuras ya que adapta las zonas planas de generación de forma nativa."
-    ],
-    "url_descarga": "https://modrinth.com/datapack/tectonic",
-    "prioridad": 13
-  },
-  {
-    "id": "deeper-darker",
-    "nombre": "Deeper and Darker",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Dimensión",
-    "descripcion_corta": "Viaja a la dimensión Otherside.",
-    "descripcion_larga": "Expande significativamente el lore detrás del Deep Dark y las Ciudades Antiguas del Warden. Permite activar el gran portal central de la estructura para viajar a 'Otherside', una dimensión subterránea sombría repleta de bloques de eco, criaturas flotantes hostiles y equipamiento legendario hecho de materiales malditos.",
-    "url_youtube": "https://www.youtube.com/embed/KZQcFSvNb4c",
-    "imagenes": ["assets/images/deeper.jpg"],
-    "guias": [
-      "Para activar el portal de la Ciudad Antigua deberás eliminar al Warden y obtener el Corazón de Eco.",
-      "Dentro de Otherside, el efecto de ceguera es constante a menos que lleves cascos especializados o pociones de visión nocturna modificadas.",
-      "Colecciona los bloques de Sculk mejorados para fabricar herramientas capaces de transmitir experiencia de forma inalámbrica."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/deeper-and-darker",
-    "prioridad": 14
-  },
-  {
-    "id": "naturalist",
-    "nombre": "Naturalist",
-    "categoria": "Mod",
-    "subcategoria": "Criaturas",
-    "descripcion_corta": "Vida salvaje realista y detallada.",
-    "descripcion_larga": "Añade una fauna masiva y realista que interactúa entre sí mediante una inteligencia artificial de cadena alimenticia. Encontraras osos cazando peces en los ríos, leones protegiendo a sus manadas en la sabana, aves exóticas en las copas de los árboles y una variedad de insectos útiles que aportan dinamismo ecológico a los paisajes.",
-    "url_youtube": "https://www.youtube.com/embed/-ABCvVTeJtk",
-    "imagenes": ["https://cdn.modrinth.com/data/C8N88Wf5/icon.png"],
-    "guias": [
-      "Ciertos animales grandes como los rinocerontes u osos se volverán territoriales y te atacarán si corres cerca de sus crías.",
-      "Puedes domesticar y criar a varias de las nuevas aves utilizando semillas específicas del mod Farmer's Delight.",
-      "Los lagartos en los biomas desérticos pueden ser ordeñados con viales de vidrio para conseguir componentes para antídotos de veneno."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/naturalist",
-    "prioridad": 15
-  },
-  {
-    "id": "rethinking-voxels",
-    "nombre": "Rethinking Voxels",
-    "categoria": "Shader",
-    "subcategoria": "Gráficos",
-    "descripcion_corta": "Ray Tracing basado en bloques.",
-    "descripcion_larga": "Una maravilla técnica de sombreadores que simula trazado de rayos (Ray Tracing) calculando la luz de forma volumétrica a través de cada bloque individual del mapa. Hace que la luz de los bloques de colores interaccione directamente con las superficies, proyectando colores realistas dentro de las habitaciones y túneles subterráneos.",
-    "url_youtube": "https://www.youtube.com/embed/FWkq_M_lSsY",
-    "imagenes": ["https://cdn.modrinth.com/data/1K9K2kcm/icon.png"],
-    "guias": [
-      "Debido a que calcula la iluminación por vóxeles en tiempo real, requiere una placa de video potente dedicada.",
-      "Disfruta del efecto colocando cristales tintados frente a fuentes de luz de linternas marinas para teñir habitaciones completas.",
-      "Si experimentas parpadeos en los reflejos, activa la opción 'Geometry Cache' en los ajustes avanzados de Iris."
-    ],
-    "url_descarga": "https://modrinth.com/shader/rethinking-voxels",
-    "prioridad": 16
-  },
-  {
-    "id": "handcrafted",
-    "nombre": "Handcrafted",
-    "categoria": "Mod",
-    "subcategoria": "Decoración",
-    "descripcion_corta": "Muebles con estilo Minecraft.",
-    "descripcion_larga": "Ofrece cientos de opciones de mobiliario funcional que respetan de forma impecable el estilo pixel-art del juego. Podrás fabricar sillas donde sentarte, mesas que se conectan dinámicamente, vitrinas para exponer tus armas de jefes, platos, sábanas personalizadas y decoraciones detalladas para que tu base se sienta como un verdadero hogar.",
-    "url_youtube": "https://www.youtube.com/embed/_vsw-xZEmvM",
-    "imagenes": ["https://cdn.modrinth.com/data/8bM6W88Y/icon.png"],
-    "guias": [
-      "Usa el 'Banco de Carpintero' para acceder a todo el catálogo de muebles sin llenar tu mesa de crafteo común.",
-      "Las estanterías e inventarios de los muebles son completamente funcionales y compatibles con tolvas.",
-      "Puedes usar tintes de colores directamente sobre las sillas y cojines para cambiar el patrón textil al instante."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
-    "prioridad": 17
-  },
-  {
-    "id": "friends-and-foes",
-    "nombre": "Friends & Foes",
-    "categoria": "Mod",
-    "subcategoria": "Criaturas",
-    "descripcion_corta": "Criaturas de las Mob Votes.",
-    "descripcion_larga": "Este mod rescata e implementa con una fidelidad asombrosa a todos los mobs que fueron descartados o perdieron en las votaciones oficiales de Mojang (Mob Votes). Trae al juego al Copper Golem, el Glare, el Iceologer y el Illusioner, integrándolos orgánicamente con sus respectivas mecánicas especiales y drops únicos en el mundo.",
-    "url_youtube": "https://www.youtube.com/embed/rI20RGb8Lxs",
-    "imagenes": ["https://cdn.modrinth.com/data/78NWbO8m/icon.png"],
-    "guias": [
-      "Puedes fabricar tu propio Copper Golem con bloques de cobre y un pararrayos; te ayudará a presionar botones de redstone al azar.",
-      "Ten extremo cuidado al escalar picos nevados; los Iceologers te atacarán lanzando cubos de hielo flotantes desde las alturas.",
-      "Al derrotar al Illusioner en las patrullas de saqueadores tendrás la oportunidad de conseguir el Tomo de Ilusión."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-fabric",
-    "prioridad": 18
-  },
-  {
-    "id": "toms-storage",
-    "nombre": "Tom's Simple Storage",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Almacenamiento",
-    "descripcion_corta": "Almacenamiento centralizado.",
-    "descripcion_larga": "Resuelve de forma elegante el caos de los cofres en el servidor. Permite interconectar todos los cofres físicos de tu base a través de cables de inventario para unificarlos en una sola interfaz centralizada (Terminal). Desde allí podrás buscar ítems por nombre, ordenarlos por cantidad y fabricar objetos directamente absorbiendo los materiales.",
-    "url_youtube": "https://www.youtube.com/embed/5RMQsbkgMLQ",
-    "imagenes": ["https://cdn.modrinth.com/data/gW9wS7mB/icon.png"],
-    "guias": [
-      "El bloque fundamental es el 'Storage Terminal'; colócalo tocando tu cofre principal o la red de cables.",
-      "Fabrica el 'Wireless Terminal' para acceder a todo el inventario de tu base por radiofrecuencia a una distancia de hasta 64 bloques.",
-      "Puedes conectar barriles funcionales de otros mods de decoración a la misma red de almacenamiento sin problemas."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/toms-simple-storage-mod",
-    "prioridad": 19
-  },
-  {
-    "id": "dragon-loot",
-    "nombre": "DragonLoot",
-    "categoria": "Mod",
-    "subcategoria": "Progresión",
-    "descripcion_corta": "Equipo hecho de escamas de dragón.",
-    "descripcion_larga": "Le da un verdadero propósito a la mítica batalla final contra el Ender Dragon en Nahuelito. Al derrotarlo, el dragón soltará sus escamas oscuras auténticas, un material extremadamente raro que sirve para forjar herramientas, armas y piezas de armadura legendarias con estadísticas de protección superiores a la Netherite pura.",
-    "url_youtube": "https://www.youtube.com/embed/ukEsigiyCAY",
-    "imagenes": ["assets/images/dragon.webp"],
-    "guias": [
-      "Recolecta las escamas del suelo inmediatamente después de que el dragón finalice su animación de muerte y explosión de experiencia.",
-      "La Dragon Armor otorga inmunidad parcial al daño de caída y al efecto de empuje de los proyectiles de los Shulkers.",
-      "Puedes reparar las herramientas de dragón en un yunque utilizando fragmentos de cristales del End combinados con experiencia."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/dragonloot",
-    "prioridad": 20
-  },  
-  {
-    "id": "advancednetherite",
-    "nombre": "Advanced Netherite",
-    "categoria": "Mod",
-    "subcategoria": "Progresión/Equipamiento",
-    "descripcion_corta": "Nuevos niveles de herramientas y armaduras.",
-    "descripcion_larga": "Advanced Netherite expande el sistema de equipamiento tardío de Minecraft añadiendo cuatro nuevos niveles de Netherita: hierro, oro, diamante y esmeralda. Cada variante posee sus propios bufos de resistencia, velocidad de minado y durabilidad mejorada, dándole una progresión profunda y metas claras al endgame del servidor.",
-    "url_youtube": "https://www.youtube.com/embed/2YwsmtGVErc",
+    "subcategoria": "Utilidad/Multijugador",
+    "descripcion_corta": "Chat de proximidad por voz integrado en el juego.",
+    "descripcion_larga": "El mod de comunicación fundamental para la comunidad de Nahuelito. Añade un sistema de chat de voz por proximidad tridimensional de alta fidelidad directamente dentro del servidor. Te permite hablar con tus compañeros de facción de forma realista regulando el volumen según la distancia e incluye soporte para canales de radio y grupos privados.",
+    "url_youtube": "https://www.youtube.com/embed/KYk8r5T8Arg",
     "imagenes": [],
     "guias": [
-      "Combina lingotes de Netherita común con cristales de diamante o esmeralda en la mesa de crafteo para obtener las nuevas aleaciones.",
-      "La armadura de Netherita de Oro otorga bufos de suerte adicionales en cofres de estructuras.",
-      "Cada pieza de equipamiento avanzada mantiene la inmunidad total al daño por fuego y lava."
+      "Presiona la tecla 'V' durante el juego para abrir el panel de opciones de configuración de volumen de tu micrófono y auriculares.",
+      "Puedes crear grupos de chat cerrados con contraseña para comunicarte de forma inalámbrica a cualquier distancia del mapa.",
+      "El indicador visual de volumen en la interfaz te avisa de forma sutil si tu micrófono está transmitiendo señal de forma correcta."
     ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/advanced-netherite",
-    "prioridad": 21
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat",
+    "prioridad": 1,
+    "destacado": true
   },
   {
-    "id": "bountiful",
-    "nombre": "Bountiful",
+    "id": "simplyskills",
+    "nombre": "Simply Skills",
     "categoria": "Mod",
-    "subcategoria": "Utilidad/Misiones",
-    "descripcion_corta": "Tablones de misiones y recompensas en aldeas.",
-    "descripcion_larga": "Añade Tablones de Recompensas (Bounty Boards) a las aldeas del mapa. Los jugadores pueden interactuar con ellos para aceptar misiones aleatorias basadas en objetivos específicos de recolección de materiales, caza de mobs o artesanía, obteniendo a cambio monedas especiales, planos y botines raros.",
-    "url_youtube": "https://www.youtube.com/embed/V17BJsz8MPU",
+    "subcategoria": "Progresión / RPG",
+    "descripcion_corta": "Árbol de habilidades RPG avanzado.",
+    "descripcion_larga": "Introduce un sistema de progresión y árbol de habilidades inspirado en los RPG clásicos. Permite a los jugadores especializarse en diferentes ramas de combate, magia o utilidad, ganando puntos de habilidad al subir de nivel para desbloquear ataques especiales y mejoras pasivas.",
+    "url_youtube": "https://www.youtube.com/embed/2_W1n6-G9O4",
     "imagenes": [],
     "guias": [
-      "Localiza el tablón central en las plazas de las aldeas para revisar la lista de contratos disponibles.",
-      "Las misiones tienen niveles de rareza: las misiones legendarias ofrecen planos constructivos exclusivos.",
-      "Presta atención al temporizador del contrato; si expira el tiempo antes de entregar los ítems, la misión fallará."
+      "Abre el menú de habilidades con la tecla por defecto (K).",
+      "Requiere ganar experiencia para obtener puntos de especialización."
     ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bountiful",
-    "prioridad": 22
-  },
-  {
-    "id": "bygone-nether",
-    "nombre": "Bygone Nether",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Nether",
-    "descripcion_corta": "Expansión de fortalezas y lore del Nether.",
-    "descripcion_larga": "Reforma sustancialmente las fortalezas clásicas del Nether añadiendo nuevas variantes de estructuras fortificadas, catacumbas y puestos avanzados de avanzada de Piglins malditos. Introduce nuevos mobs hostiles agresivos y piezas de lore antiguo que enriquecen la aventura en la dimensión infernal.",
-    "url_youtube": "https://www.youtube.com/embed/JaPvLVb5JwQ",
-    "imagenes": [],
-    "guias": [
-      "Explora los nuevos castillos de basalto en el Nether para encontrar cofres imperiales custodiados por Piglins pesados.",
-      "Lleva equipamiento con alta mitigación de daño físico; los nuevos enemigos ignoran el aturdimiento básico.",
-      "Consigue los fragmentos de obsidiana llorosa mejorada para reparar herramientas de dragón."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bygone-nether",
-    "prioridad": 23
-  },
-  {
-    "id": "carryon",
-    "nombre": "Carry On",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Mecánicas",
-    "descripcion_corta": "Levanta y transporta bloques funcionales con tus manos.",
-    "descripcion_larga": "Introduce una mecánica inmersiva esencial: la capacidad de levantar y transportar bloques funcionales completos (como cofres llenos, barriles, hornos o tolvas) y mobs pequeños con tus manos sin tener que romperlos o vaciar sus inventarios internos, facilitando la reordenación logística de tus bases.",
-    "url_youtube": "https://www.youtube.com/embed/VKFYntCPdp8",
-    "imagenes": [],
-    "guias": [
-      "Para levantar un bloque o criatura, vacía tus dos manos principales, agáchate (Shift) y haz clic derecho sobre el objetivo.",
-      "Mientras transportas un inventario pesado, tu barra de hambre se consumirá más rápido y tu velocidad de movimiento se reducirá.",
-      "Vuelve a hacer clic derecho sobre una superficie sólida plana para depositar el bloque de forma segura."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/carry-on",
-    "prioridad": 24
-  },
-  {
-    "id": "critters-and-companions",
-    "nombre": "Critters and Companions",
-    "categoria": "Mod",
-    "subcategoria": "Criaturas/Mascotas",
-    "descripcion_corta": "Animales adorables e interacciones domésticas.",
-    "descripcion_larga": "Añade una colección variada de pequeños animales salvajes y domésticos al Overworld, como hurones, nutrias, pandas rojos y libélulas. Cada criatura cuenta con animaciones personalizadas en alta definición y mecánicas interactivas que te permiten domesticarlos para que te acompañen en tus travesías.",
-    "url_youtube": "https://www.youtube.com/embed/HctkWW_y0gE",
-    "imagenes": [],
-    "guias": [
-      "Alimenta a las nutrias con almejas de los ríos para ganarte su confianza y hacer que recojan ítems del fondo del agua.",
-      "Puedes fabricar pequeños collares decorativos para tus hurones domésticos usando hilos de colores.",
-      "Los pandas rojos habitan exclusivamente en las copas de los árboles de los biomas de junglas densas."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/critters-and-companions",
-    "prioridad": 25
-  },
-  {
-    "id": "enderman-overhaul",
-    "nombre": "Enderman Overhaul",
-    "categoria": "Mod",
-    "subcategoria": "Criaturas/Combate",
-    "descripcion_corta": "Variantes únicas de Endermans por bioma.",
-    "descripcion_larga": "Reforma por completo al Enderman genérico añadiendo más de 20 variantes temáticas basadas rigurosamente en el bioma en el que spawnean. Cada variante cuenta con modelos tridimensionales espectaculares, efectos de sonido distorsionados y mecánicas de ataque letales que cambian el combate.",
-    "url_youtube": "https://www.youtube.com/embed/y1kvEKxHz7k",
-    "imagenes": [],
-    "guias": [
-      "El Enderman de las cuevas profundas es ciego pero reacciona instantáneamente al ruido de tus pisadas.",
-      "Derrotar a las variantes de los biomas nevados otorga perlas de eco que permiten teletransportarte sin sufrir daño por impacto.",
-      "Evita mirarle a los ojos al Enderman de los pantanos si no cuentas con pociones de antídoto contra el veneno."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul",
-    "prioridad": 26
-  },
-  {
-    "id": "fallingtree",
-    "nombre": "FallingTree",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Mecánicas",
-    "descripcion_corta": "Tala árboles completos de un solo golpe.",
-    "descripcion_larga": "Optimiza la recolección forestal en el servidor introduciendo físicas de tala realista en cascada. Al romper el bloque de madera base de un árbol con tu hacha, toda la estructura (incluyendo troncos superiores y hojas) caerá de golpe desmoronándose en el suelo, ahorrándote tiempo de minado.",
-    "url_youtube": "https://www.youtube.com/embed/381hH0iMP1M",
-    "imagenes": [],
-    "guias": [
-      "Mantén presionada la tecla Shift mientras talas si deseas recolectar únicamente un bloque individual sin derribar el árbol completo.",
-      "La durabilidad de tu hacha se consumirá proporcionalmente por cada bloque derribado automáticamente de la estructura.",
-      "Funciona de forma nativa con todas las maderas exóticas añadidas por el mod Biomes O' Plenty."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/falling-tree",
-    "prioridad": 27
-  },
-  {
-    "id": "guardvillagers",
-    "nombre": "Guard Villagers",
-    "categoria": "Mod",
-    "subcategoria": "Criaturas/Defensa",
-    "descripcion_corta": "Aldeanos guardianes armados para defensa.",
-    "descripcion_larga": "Introduce aldeanos guardianes patrulleros equipados con espadas, ballestas y escudos que protegen activamente las fronteras de las aldeas de los asaltos de Pillagers y zombies. Permite a los jugadores interactuar con ellos para gestionar su equipamiento, armaduras y tácticas de combate.",
-    "url_youtube": "https://www.youtube.com/embed/fRIsjO2FI7s",
-    "imagenes": [],
-    "guias": [
-      "Puedes reclutar guardianes huérfanos dándole clic derecho con una espada de hierro o una ballesta a un aldeano desempleado.",
-      "Interactúa con tus guardias contratados para cambiar sus piezas de armadura pesada y mejorar su supervivencia.",
-      "Los guardianes heridos consumirán alimentos o pociones de curación de sus inventarios si se las provees."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/guard-villagers",
-    "prioridad": 28
-  },
-  {
-    "id": "illagerinvasion",
-    "nombre": "Illager Invasion",
-    "categoria": "Mod",
-    "subcategoria": "Exploración/Jefes",
-    "descripcion_corta": "Nuevas oleadas de asaltantes e invasiones épicas.",
-    "descripcion_larga": "Expande significativamente las incursiones de asalto de Minecraft introduciendo tipos de Illagers especializados con habilidades mágicas y mecánicas de asedio. Añade laboratorios de alquimia ocultos, torres de vigilancia avanzadas y drops legendarios que aumentan la recompensa por defender tus terrenos.",
-    "url_youtube": "https://www.youtube.com/embed/D5yqSPDmcRs",
-    "imagenes": [],
-    "guias": [
-      "Cuidado con el Conjurador (Invoker): invoca oleadas de trampas de púas móviles debajo de los pies del jugador.",
-      "Derrotar a los jefes de las invasiones avanzadas otorga tomos mágicos compatibles con el sistema RPG de grimorios.",
-      "Establece defensas con guardias armados perimetrales antes de iniciar una Raid de nivel superior."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/illager-invasion",
-    "prioridad": 29
+    "url_descarga": "https://modrinth.com/mod/simply-skills",
+    "prioridad": 2,
+    "destacado": true
   },
   {
     "id": "lootr",
@@ -508,7 +49,507 @@
       "Totalmente compatible e integrado con las mazmorras masivas añadidas por When Dungeons Arise."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/lootr-fabric",
+    "prioridad": 3,
+    "destacado": true
+  },
+  {
+    "id": "waystones",
+    "nombre": "Waystones",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Transporte",
+    "descripcion_corta": "Teletransporte rápido entre bases.",
+    "descripcion_larga": "Introduce monolitos de piedra antiguos que se pueden fabricar o encontrar en aldeas para habilitar un sistema logístico de teletransporte. Ideal para conectar las bases de distintas facciones o jugadores a lo largo del mapa masivo del servidor a cambio de una pequeña cantidad de niveles de experiencia o pergaminos consumibles.",
+    "url_youtube": "https://www.youtube.com/embed/qInjq7Xi0gc",
+    "imagenes": ["https://cdn.modrinth.com/data/9e37877b/icon.png"],
+    "guias": [
+      "Activa cada Waystone que encuentres en tus viajes interactuando con ella para agregarla permanentemente a tu lista global de rutas.",
+      "Fabrica 'Pergaminos de Retorno' (Warp Scrolls) para teletransportarte de vuelta a tu base desde cualquier rincón del mapa sin depender de un monolito físico secreto.",
+      "Puedes configurar tus monolitos como privados o compartidos para controlar quién tiene acceso al portal de tu base."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/waystones",
+    "prioridad": 4,
+    "destacado": true
+  },
+  {
+    "id": "dungeons-arise",
+    "nombre": "When Dungeons Arise",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Estructuras",
+    "descripcion_corta": "Mazmorras masivas y estructuras imponentes.",
+    "descripcion_larga": "Este mod genera templos, palacios abandonados, aeronaves y fortalezas gigantescas de forma aleatoria por todo el mundo. Cada estructura cuenta con propio ecosistema de generadores de monstruos y jefes menores, ofreciendo aventuras de exploración de alta dificultad y recompensas masivas imposibles de conseguir de otra manera.",
+    "url_youtube": "https://www.youtube.com/embed/wjBHOPOYdWU",
+    "imagenes": ["https://i.postimg.cc/R0gk61Fm/2021-07-11-17-34-23.png"],
+    "guias": [
+      "Las aeronaves y barcos voladores suelen tener los botines más raros, pero están repletos de arqueros.",
+      "Lleva suficientes antorchas o fuentes de luz, ya que las mazmorras subterráneas son extremadamente oscuras y extensas.",
+      "Los cofres al final de las estructuras suelen tener trampas de TNT; revisa los bloques de abajo antes de abrirlos."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise",
+    "prioridad": 5,
+    "destacado": true
+  },
+  {
+    "id": "tectonic",
+    "nombre": "Tectonic",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Terrenos y montañas realistas.",
+    "descripcion_larga": "Tectonic modifica de raíz los algoritmos de generación de terrenos de Minecraft para crear cordilleras montañosas inmensas, acantilados colosales y ríos subterráneos fluidos que se extienden por kilómetros. Transforma el paisaje del servidor en un entorno imponente y suave, ideal para construir fortalezas épicas en la cima del mundo.",
+    "url_youtube": "https://www.youtube.com/embed/ZUq-_PTM0zI",
+    "imagenes": ["https://cdn.modrinth.com/data/6w8NWb68/icon.png"],
+    "guias": [
+      "Las cadenas montañosas generadas pueden alcanzar alturas superiores a los 250 bloques de altura; ve equipado para climas nevados.",
+      "Los ríos ahora son profundos y anchos, lo que facilita el transporte de barcos a través de largas distancias entre biomas.",
+      "Totalmente compatible con mods de estructuras ya que adapta las zonas planas de generación de forma nativa."
+    ],
+    "url_descarga": "https://modrinth.com/datapack/tectonic",
+    "prioridad": 6,
+    "destacado": true
+  },
+  {
+    "id": "farmers-delight",
+    "nombre": "Farmer's Delight",
+    "categoria": "Mod",
+    "subcategoria": "Supervivencia/Cocina",
+    "descripcion_corta": "Expande la agricultura y cocina.",
+    "descripcion_larga": "Añade una hermosa y compleja variedad de cultivos, herramientas y recetas que transforman la alimentación del servidor. Ya no tendrás que comer solo chuletas o pan; ahora puedes preparar platos elaborados, guisos, y banquetes completos que otorgan efectos positivos prolongados a los jugadores.",
+    "url_youtube": "https://www.youtube.com/embed/Ms0OuO2iDbA",
+    "imagenes": ["https://cdn.modrinth.com/data/X073Sp1m/icon.png"],
+    "guias": [
+      "Fabrica el Cuchillo de Cocina para obtener materiales especiales como paja al cortar pasto o carne limpia de los animales.",
+      "Utiliza la Olla de Hierro sobre una fogata para cocinar recetas avanzadas como estofados que no se pueden hacer en hornos comunes.",
+      "Los platos de comida avanzada otorgan el efecto 'Confort', que regenera salud de a poco sin vaciar tu barra de hambre."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/farmers-delight",
+    "prioridad": 7,
+    "destacado": true
+  },
+  {
+    "id": "man-from-fog",
+    "nombre": "The Man From The Fog",
+    "categoria": "Mod",
+    "subcategoria": "Terror",
+    "descripcion_corta": "Una presencia aterradora te acecha.",
+    "descripcion_larga": "Introduce un factor psicológico y de terror en Nahuelito. Una criatura perturbadora y letal comenzará a acecharte desde la distancia durante las noches, tormentas o días de niebla intensa. No es un mod de monstruos comunes; este ser estudia tus movimientos antes de atacar directamente con una velocidad escalofriante.",
+    "url_youtube": "https://www.youtube.com/embed/jM-kkKdm1PU",
+    "imagenes": ["assets/images/fromthefog.webp"],
+    "guias": [
+      "Si escuchas un grito distorsionado o música de tensión ambiental, significa que la entidad te ha fijado como objetivo.",
+      "La criatura puede romper puertas de madera y trepar estructuras rápidamente; tu mejor defensa es un refugio de piedra bien iluminado.",
+      "En los primeros días del servidor, evita explorar a cielo abierto durante las tormentas eléctricas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/the-man-from-the-fog",
+    "prioridad": 8,
+    "destacado": true
+  },
+  {
+    "id": "adventurez",
+    "nombre": "AdventureZ",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Jefes",
+    "descripcion_corta": "Nuevos jefes y desafíos épicos.",
+    "descripcion_larga": "AdventureZ cambia por completo la experiencia de exploración en el endgame de Nahuelito. Introduce mecánicas avanzadas de combate y enemigos formidables que requieren estrategia. El jefe principal es el Blackstone Golem, una criatura masiva con una cantidad inmensa de vida que custodia tesoros invaluables en el Nether, obligando a los jugadores a cooperar para sobrevivir.",
+    "url_youtube": "https://www.youtube.com/embed/wjL_MsNzxeM",
+    "imagenes": ["https://cdn.modrinth.com/data/9E69VM6g/icon.png"],
+    "guias": [
+      "Para invocar o localizar al Blackstone Golem necesitarás explorar las estructuras del Nether.",
+      "Cuidado con su ataque de área en el suelo: causa daño crítico directo ignorando escudos básicos.",
+      "Al derrotarlo, soltará fragmentos esenciales para forjar la armadura y herramientas de Netherite mejorada.",
+      "Nota: Se recomienda ir en grupo de mínimo 3 jugadores equipados antes de iniciar el combate."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/adventurez",
+    "prioridad": 9
+  },
+  {
+    "id": "incendium",
+    "nombre": "Incendium",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Nether",
+    "descripcion_corta": "Reforma masiva del Nether.",
+    "descripcion_larga": "Incendium redefine por completo la dimensión del Nether añadiendo biomas completamente nuevos, terrenos escarpados y estructuras masivas como castillos y ciudades flotantes de ceniza. Lo impresionante es que logra todo esto utilizando bloques nativos del juego, optimizando el rendimiento del servidor mientras cambia el lore de la dimensión.",
+    "url_youtube": "https://www.youtube.com/embed/V7RKDpXsdLk",
+    "imagenes": ["https://cdn.modrinth.com/data/7Wj7v68s/icon.png"],
+    "guias": [
+      "Busca los nuevos Castillos de Ash para enfrentarte a variantes mejoradas de los Wither Skeletons.",
+      "El bioma de los mares de lava ahora cuenta con puestos de avanzada flotantes propicios para saquear.",
+      "Lleva pociones de resistencia al fuego en todo momento; la nueva generación de terreno genera caídas de lava imprevistas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/incendium",
+    "prioridad": 10
+  },
+  {
+    "id": "complementary-reimagined",
+    "nombre": "Complementary Reimagined",
+    "categoria": "Shader",
+    "subcategoria": "Gráficos",
+    "descripcion_corta": "Shaders equilibrados y modernos.",
+    "descripcion_larga": "Es el paquete de sombreadores oficial recomendado para mantener la estética cúbica de Minecraft pero llevándola a un nivel cinematográfico. Cuenta con nubes volumétricas hermosas, iluminación difusa de antorchas, agua cristalina con reflejos en tiempo real y efectos de niebla detallados que acompañan perfectamente a los mods de aventura.",
+    "url_youtube": "https://www.youtube.com/embed/8fJBjGzPyjw",
+    "imagenes": ["https://cdn.modrinth.com/data/M1959w3O/icon.png"],
+    "guias": [
+      "Totalmente compatible e integrado con los mods de optimización Iris y Sodium.",
+      "Puedes presionar la tecla 'K' en el juego para acceder rápidamente a las opciones de configuración del shader.",
+      "Si notas tirones, cambia el perfil preestablecido de 'Ultra' a 'Medium' dentro del menú de sombreadores."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/shaders/complementary-shaders-rebound",
+    "prioridad": 11
+  },
+  {
+    "id": "bsl-shaders",
+    "nombre": "BSL Shaders",
+    "categoria": "Shader",
+    "subcategoria": "Gráficos",
+    "descripcion_corta": "Estilo cinematográfico y personalizable.",
+    "descripcion_larga": "BSL Shaders le da un toque único y fantástico al juego mediante una paleta de colores cálida y una atmósfera brillante. Es ideal para los creadores de contenido del servidor debido a su renderizado suave de sombreado, oclusión ambiental impecable y personalización extrema de los efectos de lente y desenfoque de movimiento.",
+    "url_youtube": "https://www.youtube.com/embed/T9NilwbZlfk",
+    "imagenes": ["https://cdn.modrinth.com/data/g966w760/icon.png"],
+    "guias": [
+      "Habilita el efecto de 'Motion Blur' y 'Depth of Field' en la configuración si quieres tomar capturas cinematográficas.",
+      "Puedes desactivar la niebla interna si prefieres tener una visión clara y lejana en minas subterráneas.",
+      "Ajusta el color de la luz ambiental para adaptarlo a tus preferencias visuales en light mode."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/shaders/bsl-shaders",
+    "prioridad": 12
+  },
+  {
+    "id": "fresh-animations",
+    "nombre": "Fresh Animations",
+    "categoria": "Textura",
+    "subcategoria": "Animaciones",
+    "descripcion_corta": "Vida y movimiento para los mobs.",
+    "descripcion_larga": "Este paquete de recursos cambia por completo las animaciones rígidas del Minecraft original. Los aldeanos ahora gesticulan y muestran expresiones faciales, los zombies caminan de forma errática y pesada, y las criaturas pasivas como vacas o cerdos interactúan de forma fluida con el entorno, dando una sensación de vida increíble al servidor.",
+    "url_youtube": "https://www.youtube.com/embed/VLAal7WvUXk",
+    "imagenes": ["https://cdn.modrinth.com/data/mCOb967M/icon.png"],
+    "guias": [
+      "Obligatoriamente requiere que el servidor o tu cliente tengan instalado el mod 'Entity Model Features' (EMF).",
+      "En la lista de Resource Packs de tu menú, asegúrate de colocar esta textura arriba del todo para evitar conflictos.",
+      "No afecta el rendimiento de renderizado de bloques ya que solo modifica los esqueletos de animación de las entidades."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations",
+    "prioridad": 13
+  },
+  {
+    "id": "repurposed-structures",
+    "nombre": "Repurposed Structures",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Estructuras",
+    "descripcion_corta": "Variantes de estructuras por bioma.",
+    "descripcion_larga": "Toma las estructuras clásicas de Minecraft (como templos del desierto, puestos avanzados de saqueadores, pozos de mina y mazmorras) y crea variantes temáticas espectaculares basadas en el bioma en el que se generan. Encontraras templos de la jungla hechos de bambú o prisiones subterráneas personalizadas de piedra del Nether.",
+    "url_youtube": "https://www.youtube.com/embed/1Ia0C-kuenc",
+    "imagenes": ["assets/images/repurposed.webp"],
+    "guias": [
+      "Explora los océanos para descubrir templos sumergidos con mecánicas y trampas completamente rediseñadas.",
+      "Las aldeas en biomas raros como las montañas o pantanos cambian sus materiales de construcción adaptándose a la madera local.",
+      "Compatible con el sistema de mapas de cartógrafos para ubicar las nuevas variantes de fortalezas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures-fabric",
+    "prioridad": 14
+  },
+  {
+    "id": "ad-astra",
+    "nombre": "Ad Astra",
+    "categoria": "Mod",
+    "subcategoria": "Tecnología/Espacio",
+    "descripcion_corta": "Exploración espacial y cohetes.",
+    "descripcion_larga": "El mod de tecnología espacial definitivo para el endgame de Nahuelito. Te permite construir refinerías, generar energía, automatizar recursos y fabricar cohetes espaciales para viajar fuera de la Tierra. Podrás colonizar la Luna, Marte, asteroides lejanos y establecer estaciones orbitales habitables con gravedad simulada.",
+    "url_youtube": "https://www.youtube.com/embed/D_uSt1WuHBo",
+    "imagenes": ["https://cdn.modrinth.com/data/Z97SWe8M/icon.png"],
+    "guias": [
+      "Comienza construyendo el Generador de Carbón y la Prensa de Placas para procesar los nuevos metales básicos.",
+      "Nunca despegues en un cohete sin verificar que lleves puestos tus tanques de oxígeno llenos y el traje espacial completo.",
+      "Establece un distribuidor de energía solar en la Luna para mantener activas tus máquinas de soporte vital sin gastar combustible."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/ad-astra",
+    "prioridad": 15
+  },
+  {
+    "id": "sophisticated-backpacks",
+    "nombre": "Sophisticated Backpacks",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Almacenamiento",
+    "descripcion_corta": "Mochilas avanzadas y modulares.",
+    "descripcion_larga": "Añade mochilas altamente funcionales que los jugadores pueden equipar en su ranura trasera. No es solo inventario extra; las mochilas se pueden mejorar con módulos tecnológicos internos que permiten recoger bloques del suelo automáticamente, comprimir materiales, alimentar al jugador e incluso incorporar herramientas de fundición portátiles.",
+    "url_youtube": "https://www.youtube.com/embed/AZBcD5DLtbs",
+    "imagenes": ["https://cdn.modrinth.com/data/9E9kW7b8/icon.png"],
+    "guias": [
+      "Puedes abrir tu mochila equipada en cualquier momento presionando la tecla de acceso rápido configurable (por defecto 'B').",
+      "Mejora los niveles de tu mochila utilizando hilos, cuero y posteriormente lingotes de hierro, oro y diamante para expandir sus ranuras.",
+      "Coloca un 'Módulo de Imán' dentro de la mochila para atraer los ítems del suelo directo a tu almacenamiento sin tener que caminar sobre ellos."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+    "prioridad": 16
+  },
+  {
+    "id": "deeper-darker",
+    "nombre": "Deeper and Darker",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Dimensión",
+    "descripcion_corta": "Viaja a la dimensión Otherside.",
+    "descripcion_larga": "Expande significativamente el lore detrás del Deep Dark y las Ciudades Antiguas del Warden. Permite activar el gran portal central de la estructura para viajar a 'Otherside', una dimensión subterránea sombría repleta de bloques de eco, criaturas flotantes hostiles y equipamiento legendario hecho de materiales malditos.",
+    "url_youtube": "https://www.youtube.com/embed/KZQcFSvNb4c",
+    "imagenes": ["assets/images/deeper.jpg"],
+    "guias": [
+      "Para activar el portal de la Ciudad Antigua deberás eliminar al Warden y obtener el Corazón de Eco.",
+      "Dentro de Otherside, el efecto de ceguera es constante a menos que lleves cascos especializados o pociones de visión nocturna modificadas.",
+      "Colecciona los bloques de Sculk mejorados para fabricar herramientas capaces de transmitir experiencia de forma inalámbrica."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/deeper-and-darker",
+    "prioridad": 17
+  },
+  {
+    "id": "naturalist",
+    "nombre": "Naturalist",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas",
+    "descripcion_corta": "Vida salvaje realista y detallada.",
+    "descripcion_larga": "Añade una fauna masiva y realista que interactúa entre sí mediante una inteligencia artificial de cadena alimenticia. Encontraras osos cazando peces en los ríos, leones protegiendo a sus manadas en la sabana, aves exóticas en las copas de los árboles y una variedad de insectos útiles que aportan dinamismo ecológico a los paisajes.",
+    "url_youtube": "https://www.youtube.com/embed/-ABCvVTeJtk",
+    "imagenes": ["https://cdn.modrinth.com/data/C8N88Wf5/icon.png"],
+    "guias": [
+      "Ciertos animales grandes como los rinocerontes u osos se volverán territoriales y te atacarán si corres cerca de sus crías.",
+      "Puedes domesticar y criar a varias de las nuevas aves utilizando semillas específicas del mod Farmer's Delight.",
+      "Los lagartos en los biomas desérticos pueden ser ordeñados con viales de vidrio para conseguir componentes para antídotos de veneno."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/naturalist",
+    "prioridad": 18
+  },
+  {
+    "id": "rethinking-voxels",
+    "nombre": "Rethinking Voxels",
+    "categoria": "Shader",
+    "subcategoria": "Gráficos",
+    "descripcion_corta": "Ray Tracing basado en bloques.",
+    "descripcion_larga": "Una maravilla técnica de sombreadores que simula trazado de rayos (Ray Tracing) calculando la luz de forma volumétrica a través de cada bloque individual del mapa. Hace que la luz de los bloques de colores interaccione directamente con las superficies, proyectando colores realistas dentro de las habitaciones y túneles subterráneos.",
+    "url_youtube": "https://www.youtube.com/embed/FWkq_M_lSsY",
+    "imagenes": ["https://cdn.modrinth.com/data/1K9K2kcm/icon.png"],
+    "guias": [
+      "Debido a que calcula la iluminación por vóxeles en tiempo real, requiere una placa de video potente dedicada.",
+      "Disfruta del efecto colocando cristales tintados frente a fuentes de luz de linternas marinas para teñir habitaciones completas.",
+      "Si experimentas parpadeos en los reflejos, activa la opción 'Geometry Cache' en los ajustes avanzados de Iris."
+    ],
+    "url_descarga": "https://modrinth.com/shader/rethinking-voxels",
+    "prioridad": 19
+  },
+  {
+    "id": "handcrafted",
+    "nombre": "Handcrafted",
+    "categoria": "Mod",
+    "subcategoria": "Decoración",
+    "descripcion_corta": "Muebles con estilo Minecraft.",
+    "descripcion_larga": "Ofrece cientos de opciones de mobiliario funcional que respetan de forma impecable el estilo pixel-art del juego. Podrás fabricar sillas donde sentarte, mesas que se conectan dinámicamente, vitrinas para exponer tus armas de jefes, platos, sábanas personalizadas y decoraciones detalladas para que tu base se sienta como un verdadero hogar.",
+    "url_youtube": "https://www.youtube.com/embed/_vsw-xZEmvM",
+    "imagenes": ["https://cdn.modrinth.com/data/8bM6W88Y/icon.png"],
+    "guias": [
+      "Usa el 'Banco de Carpintero' para acceder a todo el catálogo de muebles sin llenar tu mesa de crafteo común.",
+      "Las estanterías e inventarios de los muebles son completamente funcionales y compatibles con tolvas.",
+      "Puedes usar tintes de colores directamente sobre las sillas y cojines para cambiar el patrón textil al instante."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
+    "prioridad": 20
+  },
+  {
+    "id": "friends-and-foes",
+    "nombre": "Friends & Foes",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas",
+    "descripcion_corta": "Criaturas de las Mob Votes.",
+    "descripcion_larga": "Este mod rescata e implementa con una fidelidad asombrosa a todos los mobs que fueron descartados o perdieron en las votaciones oficiales de Mojang (Mob Votes). Trae al juego al Copper Golem, el Glare, el Iceologer y el Illusioner, integrándolos orgánicamente con sus respectivas mecánicas especiales y drops únicos en el mundo.",
+    "url_youtube": "https://www.youtube.com/embed/rI20RGb8Lxs",
+    "imagenes": ["https://cdn.modrinth.com/data/78NWbO8m/icon.png"],
+    "guias": [
+      "Puedes fabricar tu propio Copper Golem con bloques de cobre y un pararrayos; te ayudará a presionar botones de redstone al azar.",
+      "Ten extremo cuidado al escalar picos nevados; los Iceologers te atacarán lanzando cubos de hielo flotantes desde las alturas.",
+      "Al derrotar al Illusioner en las patrullas de saqueadores tendrás la oportunidad de conseguir el Tomo de Ilusión."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-fabric",
+    "prioridad": 21
+  },
+  {
+    "id": "toms-storage",
+    "nombre": "Tom's Simple Storage",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Almacenamiento",
+    "descripcion_corta": "Almacenamiento centralizado.",
+    "descripcion_larga": "Resuelve de forma elegante el caos de los cofres en el servidor. Permite interconectar todos los cofres físicos de tu base a través de cables de inventario para unificarlos en una sola interfaz centralizada (Terminal). Desde allí podrás buscar ítems por nombre, ordenarlos por cantidad y fabricar objetos directamente absorbiendo los materiales.",
+    "url_youtube": "https://www.youtube.com/embed/5RMQsbkgMLQ",
+    "imagenes": ["https://cdn.modrinth.com/data/gW9wS7mB/icon.png"],
+    "guias": [
+      "El bloque fundamental es el 'Storage Terminal'; colócalo tocando tu cofre principal o la red de cables.",
+      "Fabrica el 'Wireless Terminal' para acceder a todo el inventario de tu base por radiofrecuencia a una distancia de hasta 64 bloques.",
+      "Puedes conectar barriles funcionales de otros mods de decoración a la misma red de almacenamiento sin problemas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/toms-simple-storage-mod",
+    "prioridad": 22
+  },
+  {
+    "id": "dragon-loot",
+    "nombre": "DragonLoot",
+    "categoria": "Mod",
+    "subcategoria": "Progresión",
+    "descripcion_corta": "Equipo hecho de escamas de dragón.",
+    "descripcion_larga": "Le da un verdadero propósito a la mítica batalla final contra el Ender Dragon en Nahuelito. Al derrotarlo, el dragón soltará sus escamas oscuras auténticas, un material extremadamente raro que sirve para forjar herramientas, armas y piezas de armadura legendarias con estadísticas de protección superiores a la Netherite pura.",
+    "url_youtube": "https://www.youtube.com/embed/ukEsigiyCAY",
+    "imagenes": ["assets/images/dragon.webp"],
+    "guias": [
+      "Recolecta las escamas del suelo inmediatamente después de que el dragón finalice su animación de muerte y explosión de experiencia.",
+      "La Dragon Armor otorga inmunidad parcial al daño de caída y al efecto de empuje de los proyectiles de los Shulkers.",
+      "Puedes reparar las herramientas de dragón en un yunque utilizando fragmentos de cristales del End combinados con experiencia."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/dragonloot",
+    "prioridad": 23
+  },  
+  {
+    "id": "advancednetherite",
+    "nombre": "Advanced Netherite",
+    "categoria": "Mod",
+    "subcategoria": "Progresión/Equipamiento",
+    "descripcion_corta": "Nuevos niveles de herramientas y armaduras.",
+    "descripcion_larga": "Advanced Netherite expande el sistema de equipamiento tardío de Minecraft añadiendo cuatro nuevos niveles de Netherita: hierro, oro, diamante y esmeralda. Cada variante posee sus propios bufos de resistencia, velocidad de minado y durabilidad mejorada, dándole una progresión profunda y metas claras al endgame del servidor.",
+    "url_youtube": "https://www.youtube.com/embed/2YwsmtGVErc",
+    "imagenes": [],
+    "guias": [
+      "Combina lingotes de Netherita común con cristales de diamante o esmeralda en la mesa de crafteo para obtener las nuevas aleaciones.",
+      "La armadura de Netherita de Oro otorga bufos de suerte adicionales en cofres de estructuras.",
+      "Cada pieza de equipamiento avanzada mantiene la inmunidad total al daño por fuego y lava."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/advanced-netherite",
+    "prioridad": 24
+  },
+  {
+    "id": "bountiful",
+    "nombre": "Bountiful",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Misiones",
+    "descripcion_corta": "Tablones de misiones y recompensas en aldeas.",
+    "descripcion_larga": "Añade Tablones de Recompensas (Bounty Boards) a las aldeas del mapa. Los jugadores pueden interactuar con ellos para aceptar misiones aleatorias basadas en objetivos específicos de recolección de materiales, caza de mobs o artesanía, obteniendo a cambio monedas especiales, planos y botines raros.",
+    "url_youtube": "https://www.youtube.com/embed/V17BJsz8MPU",
+    "imagenes": [],
+    "guias": [
+      "Localiza el tablón central en las plazas de las aldeas para revisar la lista de contratos disponibles.",
+      "Las misiones tienen niveles de rareza: las misiones legendarias ofrecen planos constructivos exclusivos.",
+      "Presta atención al temporizador del contrato; si expira el tiempo antes de entregar los ítems, la misión fallará."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bountiful",
+    "prioridad": 25
+  },
+  {
+    "id": "bygone-nether",
+    "nombre": "Bygone Nether",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Nether",
+    "descripcion_corta": "Expansión de fortalezas y lore del Nether.",
+    "descripcion_larga": "Reforma sustancialmente las fortalezas clásicas del Nether añadiendo nuevas variantes de estructuras fortificadas, catacumbas y puestos avanzados de avanzada de Piglins malditos. Introduce nuevos mobs hostiles agresivos y piezas de lore antiguo que enriquecen la aventura en la dimensión infernal.",
+    "url_youtube": "https://www.youtube.com/embed/JaPvLVb5JwQ",
+    "imagenes": [],
+    "guias": [
+      "Explora los nuevos castillos de basalto en el Nether para encontrar cofres imperiales custodiados por Piglins pesados.",
+      "Lleva equipamiento con alta mitigación de daño físico; los nuevos enemigos ignoran el aturdimiento básico.",
+      "Consigue los fragmentos de obsidiana llorosa mejorada para reparar herramientas de dragón."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bygone-nether",
+    "prioridad": 26
+  },
+  {
+    "id": "carryon",
+    "nombre": "Carry On",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Mecánicas",
+    "descripcion_corta": "Levanta y transporta bloques funcionales con tus manos.",
+    "descripcion_larga": "Introduce una mecánica inmersiva esencial: la capacidad de levantar y transportar bloques funcionales completos (como cofres llenos, barriles, hornos o tolvas) y mobs pequeños con tus manos sin tener que romperlos o vaciar sus inventarios internos, facilitando la reordenación logística de tus bases.",
+    "url_youtube": "https://www.youtube.com/embed/VKFYntCPdp8",
+    "imagenes": [],
+    "guias": [
+      "Para levantar un bloque o criatura, vacía tus dos manos principales, agáchate (Shift) y haz clic derecho sobre el objetivo.",
+      "Mientras transportas un inventario pesado, tu barra de hambre se consumirá más rápido y tu velocidad de movimiento se reducirá.",
+      "Vuelve a hacer clic derecho sobre una superficie sólida plana para depositar el bloque de forma segura."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/carry-on",
+    "prioridad": 27
+  },
+  {
+    "id": "critters-and-companions",
+    "nombre": "Critters and Companions",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas/Mascotas",
+    "descripcion_corta": "Animales adorables e interacciones domésticas.",
+    "descripcion_larga": "Añade una colección variada de pequeños animales salvajes y domésticos al Overworld, como hurones, nutrias, pandas rojos y libélulas. Cada criatura cuenta con animaciones personalizadas en alta definición y mecánicas interactivas que te permiten domesticarlos para que te acompañen en tus travesías.",
+    "url_youtube": "https://www.youtube.com/embed/HctkWW_y0gE",
+    "imagenes": [],
+    "guias": [
+      "Alimenta a las nutrias con almejas de los ríos para ganarte su confianza y hacer que recojan ítems del fondo del agua.",
+      "Puedes fabricar pequeños collares decorativos para tus hurones domésticos usando hilos de colores.",
+      "Los pandas rojos habitan exclusivamente en las copas de los árboles de los biomas de junglas densas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/critters-and-companions",
+    "prioridad": 28
+  },
+  {
+    "id": "enderman-overhaul",
+    "nombre": "Enderman Overhaul",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas/Combate",
+    "descripcion_corta": "Variantes únicas de Endermans por bioma.",
+    "descripcion_larga": "Reforma por completo al Enderman genérico añadiendo más de 20 variantes temáticas basadas rigurosamente en el bioma en el que spawnean. Cada variante cuenta con modelos tridimensionales espectaculares, efectos de sonido distorsionados y mecánicas de ataque letales que cambian el combate.",
+    "url_youtube": "https://www.youtube.com/embed/y1kvEKxHz7k",
+    "imagenes": [],
+    "guias": [
+      "El Enderman de las cuevas profundas es ciego pero reacciona instantáneamente al ruido de tus pisadas.",
+      "Derrotar a las variantes de los biomas nevados otorga perlas de eco que permiten teletransportarte sin sufrir daño por impacto.",
+      "Evita mirarle a los ojos al Enderman de los pantanos si no cuentas con pociones de antídoto contra el veneno."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul",
+    "prioridad": 29
+  },
+  {
+    "id": "fallingtree",
+    "nombre": "FallingTree",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Mecánicas",
+    "descripcion_corta": "Tala árboles completos de un solo golpe.",
+    "descripcion_larga": "Optimiza la recolección forestal en el servidor introduciendo físicas de tala realista en cascada. Al romper el bloque de madera base de un árbol con tu hacha, toda la estructura (incluyendo troncos superiores y hojas) caerá de golpe desmoronándose en el suelo, ahorrándote tiempo de minado.",
+    "url_youtube": "https://www.youtube.com/embed/381hH0iMP1M",
+    "imagenes": [],
+    "guias": [
+      "Mantén presionada la tecla Shift mientras talas si deseas recolectar únicamente un bloque individual sin derribar el árbol completo.",
+      "La durabilidad de tu hacha se consumirá proporcionalmente por cada bloque derribado automáticamente de la estructura.",
+      "Funciona de forma nativa con todas las maderas exóticas añadidas por el mod Biomes O' Plenty."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/falling-tree",
     "prioridad": 30
+  },
+  {
+    "id": "guardvillagers",
+    "nombre": "Guard Villagers",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas/Defensa",
+    "descripcion_corta": "Aldeanos guardianes armados para defensa.",
+    "descripcion_larga": "Introduce aldeanos guardianes patrulleros equipados con espadas, ballestas y escudos que protegen activamente las fronteras de las aldeas de los asaltos de Pillagers y zombies. Permite a los jugadores interactuar con ellos para gestionar su equipamiento, armaduras y tácticas de combate.",
+    "url_youtube": "https://www.youtube.com/embed/fRIsjO2FI7s",
+    "imagenes": [],
+    "guias": [
+      "Puedes reclutar guardianes huérfanos dándole clic derecho con una espada de hierro o una ballesta a un aldeano desempleado.",
+      "Interactúa con tus guardias contratados para cambiar sus piezas de armadura pesada y mejorar su supervivencia.",
+      "Los guardianes heridos consumirán alimentos o pociones de curación de sus inventarios si se las provees."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/guard-villagers",
+    "prioridad": 31
+  },
+  {
+    "id": "illagerinvasion",
+    "nombre": "Illager Invasion",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Jefes",
+    "descripcion_corta": "Nuevas oleadas de asaltantes e invasiones épicas.",
+    "descripcion_larga": "Expande significativamente las incursiones de asalto de Minecraft introduciendo tipos de Illagers especializados con habilidades mágicas y mecánicas de asedio. Añade laboratorios de alquimia ocultos, torres de vigilancia avanzadas y drops legendarios que aumentan la recompensa por defender tus terrenos.",
+    "url_youtube": "https://www.youtube.com/embed/D5yqSPDmcRs",
+    "imagenes": [],
+    "guias": [
+      "Cuidado con el Conjurador (Invoker): invoca oleadas de trampas de púas móviles debajo de los pies del jugador.",
+      "Derrotar a los jefes de las invasiones avanzadas otorga tomos mágicos compatibles con el sistema RPG de grimorios.",
+      "Establece defensas con guardias armados perimetrales antes de iniciar una Raid de nivel superior."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/illager-invasion",
+    "prioridad": 32
   },
   {
     "id": "nullscape",
@@ -525,7 +566,7 @@
       "Compatible con mods de estructuras de End de Moog para la exploración táctica."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/nullscape",
-    "prioridad": 31
+    "prioridad": 33
   },
   {
     "id": "pehkui",
@@ -542,7 +583,7 @@
       "No genera conflictos gráficos de texturas gracias a su renderizado modular suavizado."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/pehkui",
-    "prioridad": 32
+    "prioridad": 34
   },
   {
     "id": "sound-physics-remastered",
@@ -559,7 +600,7 @@
       "Facilita la localización espacial de mobs hostiles ocultos detrás de paredes de minas subterráneas profundas."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered",
-    "prioridad": 33
+    "prioridad": 35
   },
   {
     "id": "the-graveyard-fabric",
@@ -576,7 +617,7 @@
       "Nota: No abras las tumbas imperiales principales a menos que vayas equipado con pociones de regeneración avanzada."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/the-graveyard-fabric",
-    "prioridad": 34
+    "prioridad": 36
   },
   {
     "id": "tradingpost",
@@ -593,7 +634,7 @@
       "Puedes realizar múltiples transacciones comerciales en paralelo consumiendo esmeraldas de tu inventario al instante."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/trading-post",
-    "prioridad": 35
+    "prioridad": 37
   },
   {
     "id": "villagersplus",
@@ -610,24 +651,7 @@
       "Mejora el nivel de los aldeanos vendiéndoles materiales básicos de recolección para desbloquear planos raros."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/villagersplus-fabric",
-    "prioridad": 36
-  },
-  {
-    "id": "voicechat",
-    "nombre": "Simple Voice Chat",
-    "categoria": "Mod",
-    "subcategoria": "Utilidad/Multijugador",
-    "descripcion_corta": "Chat de proximidad por voz integrado en el juego.",
-    "descripcion_larga": "El mod de comunicación fundamental para la comunidad de Nahuelito. Añade un sistema de chat de voz por proximidad tridimensional de alta fidelidad directamente dentro del servidor. Te permite hablar con tus compañeros de facción de forma realista regulando el volumen según la distancia e incluye soporte para canales de radio y grupos privados.",
-    "url_youtube": "https://www.youtube.com/embed/KYk8r5T8Arg",
-    "imagenes": [],
-    "guias": [
-      "Presiona la tecla 'V' durante el juego para abrir el panel de opciones de configuración de volumen de tu micrófono y auriculares.",
-      "Puedes crear grupos de chat cerrados con contraseña para comunicarte de forma inalámbrica a cualquier distancia del mapa.",
-      "El indicador visual de volumen en la interfaz te avisa de forma sutil si tu micrófono está transmitiendo señal de forma correcta."
-    ],
-    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat",
-    "prioridad": 37
+    "prioridad": 38
   },
   {
     "id": "yungs-better-dungeons",
@@ -644,7 +668,7 @@
       "Combina perfectamente con el sistema de instancias de botines individuales provisto por Lootr."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-fabric",
-    "prioridad": 38
+    "prioridad": 39
   },
   {
     "id": "hybrid-aquatic",
@@ -661,7 +685,7 @@
       "Compatible e integrado con las recetas de cocina avanzada de filetes provistas por Aquaculture 2."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/hybrid-aquatic",
-    "prioridad": 39
+    "prioridad": 40
   },
   {
     "id": "eating-animation",
@@ -678,7 +702,7 @@
       "Coloca este recurso arriba del todo en tu lista de packs de texturas seleccionados en el menú para evitar conflictos gráficos."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/eating-animation-pack",
-    "prioridad": 40
+    "prioridad": 41
   },
   {
     "id": "amendments",
@@ -695,7 +719,7 @@
       "Puedes conectar tolvas debajo del tocadiscos para automatizar la reproducción en bucle de tus discos."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/amendments",
-    "prioridad": 41
+    "prioridad": 42
   },
   {
     "id": "another_furniture",
@@ -712,7 +736,7 @@
       "Utiliza hachas en tu mano para realizar modificaciones estéticas menores en ciertos detalles de madera del mod."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/another-furniture",
-    "prioridad": 42
+    "prioridad": 43
   },
   {
     "id": "animal_feeding_trough",
@@ -729,7 +753,7 @@
       "El comedero limita la reproducción automática si detecta que la densidad de población de la zona supera los límites seguros del servidor."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/animal-feeding-trough",
-    "prioridad": 43
+    "prioridad": 44
   },
   {
     "id": "barteringstation",
@@ -742,11 +766,11 @@
     "imagenes": [],
     "guias": [
       "Coloca la estación en una zona segura del Nether rodeada por Piglins encerrados o atraídos a la zona.",
-      "Introduce tus lingotes de oro en la ranura izquierda y presiona el botón central de la interfaz para iniciar los intercambios masivos.",
-      "Conecta cofres con tolvas en la base del bloque para filtrar y almacenar de forma automática todas las pociones y perlas obtenidas."
+      "Introduce tus divisa en la ranura izquierda y presiona el botón central para iniciar los intercambios masivos.",
+      "Conecta cofres con tolvas en la base del bloque para filtrar y almacenar de forma automática."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bartering-station",
-    "prioridad": 44
+    "prioridad": 45
   },
   {
     "id": "betterstats",
@@ -763,7 +787,7 @@
       "Pasa el cursor del ratón sobre los iconos para revisar el tiempo real invertido en la sesión de juego."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/better-statistics-screen",
-    "prioridad": 45
+    "prioridad": 46
   },
   {
     "id": "bettertridents",
@@ -780,7 +804,7 @@
       "Los tridentes lanzados con el encantamiento de Canalización causan daño crítico continuo si el objetivo está sumergido bajo el agua."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/better-tridents",
-    "prioridad": 46
+    "prioridad": 47
   },
   {
     "id": "controlify",
@@ -1035,9 +1059,9 @@
       "Mantiene la estética vanilla del cielo si se desea desde las opciones avanzadas."
     ],
     "url_descarga": "https://modrinth.com/shader/potatoshaders",
-    "prioridad": 4
+    "prioridad": 62
   },
- {
+  {
     "id": "enhanced-boss-bars",
     "nombre": "Enhanced Boss Bars",
     "categoria": "Textura",
@@ -1051,7 +1075,7 @@
       "Totalmente compatible con los nuevos bosses de The Graveyard y AdventureZ."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/enhanced-boss-bars",
-    "prioridad": 10
+    "prioridad": 63
   },
   {
     "id": "low-on-fire",
@@ -1067,7 +1091,7 @@
       "Ideal para PvP y para explorar zonas volcánicas de forma más cómoda."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/low-on-fire",
-    "prioridad": 11
+    "prioridad": 64
   },
   {
     "id": "enhanced-block-entities",
@@ -1083,7 +1107,7 @@
       "Hace que los cofres reaccionen correctamente a la luz dinámica de los Shaders."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/enhanced-block-entities",
-    "prioridad": 12
+    "prioridad": 65
   },
   {
     "id": "vocal-villagers",
@@ -1099,7 +1123,7 @@
       "Las interacciones de comercio ahora tienen respuestas de audio positivas o negativas claras."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/vocal-villagers",
-    "prioridad": 13
+    "prioridad": 66
   },
   {
     "id": "better-modded-gui",
@@ -1114,6 +1138,742 @@
       "Colocalo justo por debajo de tu Dark Mode para asegurar que los colores oscuros se apliquen a las máquinas nuevas."
     ],
     "url_descarga": "https://www.curseforge.com/minecraft/texture-packs/better-modded-gui",
-    "prioridad": 14
+    "prioridad": 67
+  },
+  {
+    "id": "undeadnights",
+    "nombre": "Undead Nights",
+    "categoria": "Mod",
+    "subcategoria": "Supervivencia / Eventos",
+    "descripcion_corta": "Lunas de sangre y hordas nocturnas.",
+    "descripcion_larga": "Añade un sistema de eventos nocturnos donde, en ciertas noches cada ciclo de días, los monstruos se vuelven más fuertes, rápidos y capaces de romper bloques de defensa. Fomenta la creación de fortalezas seguras en lugar de pasar la noche a la intemperie.",
+    "url_youtube": "https://www.youtube.com/embed/kH8M5G7hZkk",
+    "imagenes": [],
+    "guias": [
+      "Mantente alerta a los mensajes en el chat que advierten sobre la caída de la noche.",
+      "Asegura puertas y ventanas con bloques reforzados, los monstruos élite pueden romper la madera."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/undead-nights",
+    "prioridad": 68
+  },
+  {
+    "id": "xaeros-minimap",
+    "nombre": "Xaero's Minimap & World Map",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad / Interfaz",
+    "descripcion_corta": "Minimapa detallado y mapa del mundo.",
+    "descripcion_larga": "Una herramienta imprescindible para no perderte. Añade un minimapa en la esquina de tu pantalla con radar de entidades, y un mapa a pantalla completa que registra todas las zonas que has explorado. Permite guardar puntos de ruta (Waypoints) para encontrar tu base o recursos valiosos.",
+    "url_youtube": "https://www.youtube.com/embed/5F2o3r8SfpU",
+    "imagenes": [],
+    "guias": [
+      "Presiona 'M' para abrir el mapa del mundo y 'B' para guardar un nuevo Waypoint.",
+      "Puedes configurar qué entidades se muestran en el radar desde los ajustes del minimapa (tecla Y)."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
+    "prioridad": 69
+  },
+  {
+    "id": "roughlyenoughitems",
+    "nombre": "Roughly Enough Items (REI)",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad / Interfaz",
+    "descripcion_corta": "Visor de crafteos y recetas.",
+    "descripcion_larga": "Muestra una lista interactiva en tu inventario con todos los bloques y objetos del juego (incluidos los de otros mods). Al hacer clic en un objeto, te muestra exactamente cómo se craftea o en qué máquinas se procesa, ahorrándote horas de buscar en wikis externas.",
+    "url_youtube": "https://www.youtube.com/embed/9gPqOaQv6W8",
+    "imagenes": [],
+    "guias": [
+      "Haz clic izquierdo en un ítem para ver su receta, y clic derecho para ver en qué recetas se usa.",
+      "Usa la barra de búsqueda inferior para filtrar por nombre o por mod (usando @nombre_del_mod)."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items",
+    "prioridad": 70
+  },
+  {
+    "id": "graves",
+    "nombre": "Graves",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad / Supervivencia",
+    "descripcion_corta": "Tumbas para recuperar tu inventario.",
+    "descripcion_larga": "Evita la frustración de perder todo tu progreso si mueres en lava o por explosiones. Al morir, todos tus objetos y experiencia se guardarán de forma segura en una tumba física que solo tú puedes abrir, esperando a que vuelvas a reclamarlos sin que desaparezcan por límite de tiempo.",
+    "url_youtube": "https://www.youtube.com/embed/fT5bXkQxHjQ",
+    "imagenes": [],
+    "guias": [
+      "Obtendrás un papel con las coordenadas exactas de tu muerte al reaparecer.",
+      "Si mueres en el vacío, tu tumba se generará en el bloque sólido más cercano para que sea recuperable."
+    ],
+    "url_descarga": "https://modrinth.com/mod/graves",
+    "prioridad": 71
+  },
+  {
+    "id": "jade",
+    "nombre": "Jade",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad / Interfaz",
+    "descripcion_corta": "Información emergente (Waila).",
+    "descripcion_larga": "Muestra un pequeño recuadro en la parte superior de la pantalla con información útil sobre el bloque o entidad que estás mirando. Indica a qué mod pertenece, el progreso de crecimiento de los cultivos, o qué hay dentro de un inventario y máquinas sin tener que abrirlos.",
+    "url_youtube": "https://www.youtube.com/embed/t456Fw-ePzw",
+    "imagenes": [],
+    "guias": [
+      "Presiona '0' en el teclado numérico para abrir los ajustes y personalizar su apariencia o tamaño.",
+      "Muy útil para saber cuánta vida le queda a los jefes, mobs o a tus mascotas en combate."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/jade",
+    "prioridad": 72
+  },
+  {
+    "id": "spell_engine",
+    "nombre": "Spell Engine",
+    "categoria": "Mod",
+    "subcategoria": "Magia/RPG",
+    "descripcion_corta": "Motor avanzado de combate y hechizos mágicos.",
+    "descripcion_larga": "Actúa como la base y motor para un sistema de combate mágico estilo RPG. Permite lanzar hechizos vinculados a libros de magia, cetros y bastones. Incluye animaciones personalizadas de lanzamiento y partículas volumétricas para los ataques elementales.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Busca mesas de vinculación mágica para equipar tus hechizos.",
+      "Las estadísticas de daño mágico escalan con las piezas de armadura específicas de mago."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/spell-engine",
+    "prioridad": 73
+  },
+  {
+    "id": "puffish_attributes",
+    "nombre": "Puffish Attributes",
+    "categoria": "Mod",
+    "subcategoria": "Progresión/RPG",
+    "descripcion_corta": "Atributos y estadísticas de combate detalladas.",
+    "descripcion_larga": "Un sistema indispensable para modificar atributos y estadísticas internas de jugadores y mobs. Soporta el escalado de vida, daño crítico, velocidad de ataque y resistencia elemental, funcionando en sintonía con las ramas de Simply Skills.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Dependencia técnica base para la correcta progresión de nivel de los jugadores."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/puffish-attributes",
+    "prioridad": 74
+  },
+  {
+    "id": "frostiful",
+    "nombre": "Frostiful",
+    "categoria": "Mod",
+    "subcategoria": "Supervivencia",
+    "descripcion_corta": "Mecánicas de temperatura y congelamiento reales.",
+    "descripcion_larga": "Hace que el clima frío sea un verdadero desafío de supervivencia. Añade un medidor de temperatura corporal que desciende si pasas mucho tiempo en la nieve o nadas en aguas heladas. Deberás crear ropa de invierno, encender fogatas o preparar bebidas calientes para evitar morir congelado.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Lleva bloques de magma o fogatas portátiles en tu inventario para emergencias en picos nevados.",
+      "El efecto de congelación ralentizará tus ataques y tu velocidad de movimiento progresivamente."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/frostiful",
+    "prioridad": 75
+  },
+  {
+    "id": "eldritch_mobs",
+    "nombre": "Eldritch Mobs",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Combate",
+    "descripcion_corta": "Variantes élite y jefes de monstruos comunes.",
+    "descripcion_larga": "Genera de forma aleatoria variantes 'Élite', 'Ultra' y 'Eldritch' de los monstruos comunes del juego (como zombies o esqueletos). Estos mobs poseen vida aumentada, regeneración y habilidades mágicas como lanzar fuego o telarañas, pero al derrotarlos soltarán botín altamente valioso.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Presta atención al nombre sobre sus cabezas, el color te indicará la rareza y el nivel de peligro del monstruo.",
+      "Un monstruo Eldritch puede ignorar escudos, atácalo a distancia."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/eldritch-mobs",
+    "prioridad": 76
+  },
+  {
+    "id": "bosses_of_mass_destruction",
+    "nombre": "Bosses of Mass Destruction",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Jefes",
+    "descripcion_corta": "Cuatro jefes masivos con mecánicas únicas.",
+    "descripcion_larga": "Introduce cuatro combates contra jefes con calidad de estudio distribuidos por distintas dimensiones (Night Lich, Void Blossom, Nether Gauntlet y Obsidilith). Cada jefe posee fases complejas, ataques de área masivos y secuencias de combate que exigen juego en equipo.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Explora las nuevas torres en los biomas fríos para enfrentar al Night Lich.",
+      "Sus drops permiten craftear ítems legendarios como el gancho de agarre del Nether."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction",
+    "prioridad": 77
+  },
+  {
+    "id": "explorify",
+    "nombre": "Explorify",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Nuevas estructuras que respetan el estilo vanilla.",
+    "descripcion_larga": "Añade una extensa variedad de estructuras abandonadas que encajan perfectamente con el estilo de juego base (Vanilla+). Encontrarás ruinas subterráneas, criptas, castillos en ruinas y campamentos saqueados que recompensan la exploración activa.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Totalmente compatible con la generación de terrenos de Tectonic.",
+      "Usa los mapas de tesoros encontrados en barcos hundidos para localizar rápidamente estas ruinas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/explorify",
+    "prioridad": 78
+  },
+  {
+    "id": "dungeons_and_taverns",
+    "nombre": "Dungeons and Taverns",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Estructuras",
+    "descripcion_corta": "Tabernas acogedoras y mazmorras desafiantes.",
+    "descripcion_larga": "Genera cálidas tabernas medievales habitadas por aldeanos en los caminos, sirviendo como puntos de descanso seguros. Al mismo tiempo, expande la dificultad del mundo añadiendo nuevas mazmorras laberínticas bajo tierra repletas de saqueadores.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Las tabernas son lugares excelentes para establecer rutas de comercio seguros.",
+      "Cuidado con los sótanos ocultos, pueden contener generadores de monstruos."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/dungeons-and-taverns",
+    "prioridad": 79
+  },
+  {
+    "id": "moogs_end_structures",
+    "nombre": "Moog's End Structures",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/End",
+    "descripcion_corta": "Expande drásticamente las ciudades del End.",
+    "descripcion_larga": "Soluciona la monotonía visual del End añadiendo ruinas flotantes, torres de obsidiana masivas y altares misteriosos esparcidos por las islas del vacío. Enriquece el lore y ofrece más motivos para explorar la dimensión final tras vencer al dragón.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Lleva muchas perlas de Ender, las nuevas estructuras exigen saltos de fe calculados.",
+      "Los botines incluyen piezas raras de Elytras gastadas y diamantes."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures",
+    "prioridad": 80
+  },
+  {
+    "id": "moogs_structures",
+    "nombre": "Moog's Structures",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Variedad extrema de estructuras para el Overworld.",
+    "descripcion_larga": "Acompaña a las modificaciones geológicas introduciendo puestos de guardia, torres de vigilancia y fortalezas en ruinas. Optimizado para no saturar el servidor, generando puntos de interés a distancias prudentes para motivar los viajes largos.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Las estructuras cambian sus materiales de construcción dependiendo del bioma en el que aparezcan."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/moogs-structures",
+    "prioridad": 81
+  },
+  {
+    "id": "paradise_lost",
+    "nombre": "Paradise Lost",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Dimensión",
+    "descripcion_corta": "El regreso de la legendaria dimensión del Aether.",
+    "descripcion_larga": "Un sucesor espiritual masivo del mod del Aether. Añade un paraíso hostil en los cielos con nubes sólidas, mazmorras de oro y bronce, jefes divinos y flora celestial. El terreno es traicionero, y una caída significa volver al Overworld de forma violenta.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Activa el portal al paraíso creando un marco de piedra luminosa y activándolo con agua.",
+      "Fabrica paracaídas o botas de caída lenta, el terreno de nubes es engañoso."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/paradise-lost",
+    "prioridad": 82
+  },
+  {
+    "id": "voidz",
+    "nombre": "VoidZ",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Dimensión",
+    "descripcion_corta": "Explora el abismo debajo de la roca base.",
+    "descripcion_larga": "Añade una dimensión extremadamente hostil y oscura situada conceptualmente debajo de la Bedrock. Repleta de nuevos minerales oscuros y entidades sombrías. El daño ambiental y la ceguera son una constante.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Solo para jugadores en el endgame con armadura de Netherita avanzada o de Dragón.",
+      "Las fuentes de luz artificial tienen su rango muy reducido en el abismo."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/voidz",
+    "prioridad": 83
+  },
+  {
+    "id": "ultris",
+    "nombre": "Ultris: Boss Expansion",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Jefes",
+    "descripcion_corta": "Expansión masiva de jefes por bioma.",
+    "descripcion_larga": "Integra jefes únicos temáticos en biomas donde normalmente no hay peligro. Lucha contra el Slime Rey en los pantanos, el Devorador de Arena en el desierto o el Gólem de Magma en el subsuelo, cada uno con música épica y trofeos propios.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Recolecta sus trofeos para exhibirlos en tu sala de botines en la base principal.",
+      "Asegúrate de preparar pociones de resistencia específicas según el elemento del jefe."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/ultris",
+    "prioridad": 84
+  },
+  {
+    "id": "trek",
+    "nombre": "Trek",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Exploración",
+    "descripcion_corta": "Mejoras de inventario y viaje inmersivo.",
+    "descripcion_larga": "Añade herramientas y mecánicas diseñadas para nómadas. Incluye sacos de dormir portátiles que no reinician tu punto de aparición, mochilas ligeras y equipamiento táctico de supervivencia para largas caminatas sin depender de una cama fija.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Usa el saco de dormir para pasar la noche rápido en viajes largos sin perder tu respawn en casa.",
+      "Muy útil para combinar con Waystones y mapas mundiales."
+    ],
+    "url_descarga": "https://modrinth.com/mod/trek",
+    "prioridad": 85
+  },
+  {
+    "id": "true_ending",
+    "nombre": "True Ending",
+    "categoria": "Mod",
+    "subcategoria": "Progresión/End",
+    "descripcion_corta": "Remasterización del final del juego y el dragón.",
+    "descripcion_larga": "Transforma la isla central del End y el combate contra el Ender Dragon, dándole mecánicas más pulidas, una arena mejor diseñada y un sentimiento de conclusión épica verdadera acorde a la cantidad de horas invertidas en el servidor.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Evita el daño de área del dragón, sus ataques ahora dejan fuego oscuro residual en el suelo.",
+      "Prepárate para destruir los cristales de curación protegidos por jaulas de obsidiana más complejas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/true-ending",
+    "prioridad": 86
+  },
+  {
+    "id": "weeping_angels",
+    "nombre": "Weeping Angels",
+    "categoria": "Mod",
+    "subcategoria": "Terror",
+    "descripcion_corta": "Si parpadeas, mueres.",
+    "descripcion_larga": "Añade la mítica criatura de ciencia ficción al juego. Estos ángeles de piedra no se moverán ni un centímetro mientras los estés mirando directamente, pero en cuanto apartes la vista o te des la vuelta, avanzarán rápidamente hacia ti. Un mod de terror psicológico puro.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Camina de espaldas si te encuentras con uno en las cuevas oscuras.",
+      "Las armas convencionales hacen muy poco daño; tu mejor defensa es encerrarlos o picarlos."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/weeping-angels",
+    "prioridad": 87
+  },
+  {
+    "id": "mythic_charms",
+    "nombre": "Mythic Charms",
+    "categoria": "Mod",
+    "subcategoria": "Progresión/Equipamiento",
+    "descripcion_corta": "Amuletos mágicos y bufos pasivos.",
+    "descripcion_larga": "Añade una colección de amuletos que se pueden equipar en ranuras especiales de joyería. Proporcionan habilidades pasivas como resistencia al empuje, inmunidad al veneno o un ligero aumento en la velocidad de minado.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Requiere el mod Trinkets para habilitar las ranuras de joyería en tu inventario.",
+      "Consigue los amuletos explorando cofres en mazmorras masivas o mediante crafteos raros."
+    ],
+    "url_descarga": "https://modrinth.com/mod/mythic-charms",
+    "prioridad": 88
+  },
+  {
+    "id": "species",
+    "nombre": "Species",
+    "categoria": "Mod",
+    "subcategoria": "Inmersión/RPG",
+    "descripcion_corta": "Razas y orígenes para los jugadores.",
+    "descripcion_larga": "Al entrar al servidor por primera vez, te permite elegir tu especie (como Elfo, Enano o Humano). Cada raza tiene ventajas y desventajas únicas, como ver mejor en la oscuridad, ser más bajo para pasar por espacios reducidos o tener más salud base.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Elige con cuidado, tu decisión impactará tu estilo de juego permanentemente.",
+      "Los enanos minan más rápido pero se mueven más lento en la superficie."
+    ],
+    "url_descarga": "https://modrinth.com/mod/species",
+    "prioridad": 89
+  },
+  {
+    "id": "ribbits",
+    "nombre": "Ribbits",
+    "categoria": "Mod",
+    "subcategoria": "Criaturas",
+    "descripcion_corta": "Ranas, sapos y vida de pantano.",
+    "descripcion_larga": "Expande drásticamente la variedad de anfibios en el juego. Introduce sapos venenosos, ranas toro y renacuajos con físicas mejoradas y sonidos ambientales relajantes para los biomas húmedos.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Acércate con sigilo, la mayoría saltará al agua si corres cerca de ellos.",
+      "Puedes recogerlos usando cubos de agua para trasladarlos a tu base."
+    ],
+    "url_descarga": "https://modrinth.com/mod/ribbits",
+    "prioridad": 90
+  },
+  {
+    "id": "winterly",
+    "nombre": "Winterly",
+    "categoria": "Mod",
+    "subcategoria": "Decoración/Inmersión",
+    "descripcion_corta": "Decoraciones navideñas y de invierno.",
+    "descripcion_larga": "Perfecto para climas nevados. Añade guirnaldas, luces, regalos, muñecos de nieve decorativos, gorros de santa y comida festiva. Convierte cualquier cabaña de abeto en un refugio acogedor ideal para las fiestas.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Puedes teñir los gorros de invierno de distintos colores usando tintes comunes.",
+      "Coloca luces colgantes entre las vigas de madera para iluminar de forma cálida."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/winterly",
+    "prioridad": 91
+  },
+  {
+    "id": "wetlands",
+    "nombre": "Wetlands",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Biomas de pantano y humedales expandidos.",
+    "descripcion_larga": "Renueva los monótonos pantanos de Minecraft introduciendo fango profundo, cipreses masivos, raíces colgantes, ruinas hundidas y una densidad vegetal que los vuelve desafiantes y visualmente impresionantes para explorar.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Cuidado donde pisas, el fango profundo reducirá severamente tu velocidad.",
+      "Construye barcas para navegar entre los canales laberínticos del humedal."
+    ],
+    "url_descarga": "https://modrinth.com/mod/wetlands",
+    "prioridad": 92
+  },
+  {
+    "id": "promenade",
+    "nombre": "Promenade",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Diversidad masiva de biomas y árboles.",
+    "descripcion_larga": "Añade nuevos biomas hermosos que respetan la paleta de colores del juego base, incluyendo campos de cerezos, bosques de arces naranjas, praderas masivas y pantanos de glicinas. Incluye decenas de nuevas maderas para los constructores.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Cada nueva madera cuenta con su set completo de escaleras, puertas y escotillas.",
+      "Excelente para explorar utilizando las Elytras y buscar terrenos llanos de construcción."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/promenade",
+    "prioridad": 93
+  },
+  {
+    "id": "geophilic",
+    "nombre": "Geophilic",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo",
+    "descripcion_corta": "Mejora sutil de los biomas nativos.",
+    "descripcion_larga": "En lugar de añadir nuevos bloques, Geophilic utiliza los bloques base de Minecraft (troncos caídos, rocas cubiertas de musgo, tocones de árboles) para enriquecer y detallar drásticamente los bosques, desiertos y praderas existentes sin saturar el inventario de nuevos ítems.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Optimizado para integrarse de forma impecable con Tectonic.",
+      "Ideal para jugadores que prefieren la estética 'Vanilla+' limpia."
+    ],
+    "url_descarga": "https://modrinth.com/mod/geophilic",
+    "prioridad": 94
+  },
+  {
+    "id": "formations",
+    "nombre": "Formations",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Estructuras",
+    "descripcion_corta": "Librería base para estructuras orgánicas.",
+    "descripcion_larga": "Es la biblioteca técnica requerida para inyectar cientos de pequeñas estructuras orgánicas, campamentos y ruinas de manera lógica en la superficie sin superponerse ni causar errores topográficos.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Dependencia técnica, no añade contenido directo por sí mismo sin sus expansiones."
+    ],
+    "url_descarga": "https://modrinth.com/mod/formations",
+    "prioridad": 95
+  },
+  {
+    "id": "formations_overworld",
+    "nombre": "Formations Overworld",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Estructuras",
+    "descripcion_corta": "Pequeños puntos de interés en la superficie.",
+    "descripcion_larga": "Repuebla el mundo de Minecraft con formaciones rocosas naturales, pequeños campamentos abandonados, carros de comerciantes rotos y pozos, llenando los espacios vacíos entre las aldeas de forma realista.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Busca los carros rotos, suelen esconder un cofre oculto bajo tierra con suministros básicos."
+    ],
+    "url_descarga": "https://modrinth.com/mod/formations-overworld",
+    "prioridad": 96
+  },
+  {
+    "id": "formations_nether",
+    "nombre": "Formations Nether",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Nether",
+    "descripcion_corta": "Ruinas y formaciones de basalto y piedra negra.",
+    "descripcion_larga": "Añade pequeños altares malditos, fosos de lava naturales estructurados y restos de campamentos Piglin en el Nether, dándole una sensación de dimensión antigua y previamente explorada por civilizaciones perdidas.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Excelente para minar bloques de cuarzo o piedra negra tallada de las ruinas directamente."
+    ],
+    "url_descarga": "https://modrinth.com/mod/formations-nether",
+    "prioridad": 97
+  },
+  {
+    "id": "hearth_and_home",
+    "nombre": "Hearth and Home",
+    "categoria": "Mod",
+    "subcategoria": "Decoración",
+    "descripcion_corta": "Chimeneas, estanterías y decoración acogedora.",
+    "descripcion_larga": "Añade detalles esenciales para interiores rústicos, como hornos de leña de ladrillo, vitrinas de zapatos, alfombras detalladas y estantes de cocina que encajan visualmente con los ladrillos tradicionales.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Las chimeneas tienen mecánicas reales para encender y apagar el fuego internamente."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/hearth-and-home",
+    "prioridad": 98
+  },
+  {
+    "id": "hearths",
+    "nombre": "Hearths",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Supervivencia",
+    "descripcion_corta": "Puntos de descanso que curan pasivamente.",
+    "descripcion_larga": "Introduce un bloque de Hoguera (Hearth) que, al estar encendido, otorga un aura de sanación pasiva y regeneración lenta a los jugadores que se encuentren cerca de él. Ideal para salas comunes y zonas centrales en las bases de clanes.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "El efecto no reemplaza la comida, pero ahorra recursos tras regresar de una batalla dura.",
+      "Necesitas mantenerla alimentada para que funcione."
+    ],
+    "url_descarga": "https://modrinth.com/mod/hearths",
+    "prioridad": 99
+  },
+  {
+    "id": "almanac",
+    "nombre": "Almanac",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Interfaz",
+    "descripcion_corta": "Guía enciclopédica del juego en tu inventario.",
+    "descripcion_larga": "Un libro de registro que actúa como una wiki in-game. Documenta las criaturas que has descubierto, las recetas que has desbloqueado y sirve de guía inmersiva sin romper el rol para entender las mecánicas complejas del servidor.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Craftealo con un libro normal y empieza a explorar para llenar sus páginas."
+    ],
+    "url_descarga": "https://modrinth.com/mod/almanac",
+    "prioridad": 100
+  },
+  {
+    "id": "blossom",
+    "nombre": "Blossom",
+    "categoria": "Mod",
+    "subcategoria": "Generación de Mundo/Estética",
+    "descripcion_corta": "Árboles florales y hojas coloridas.",
+    "descripcion_larga": "Se centra en la belleza estética de la naturaleza añadiendo una variedad de árboles en flor (cerezos rosados, manzanos en flor) que generan biomas espectaculares y llenan el suelo de partículas de hojas cayendo suavemente.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Recoge sus retoños para crear jardines japoneses o plazas vibrantes en tu base."
+    ],
+    "url_descarga": "https://modrinth.com/mod/blossom",
+    "prioridad": 101
+  },
+  {
+    "id": "paraglider",
+    "nombre": "Paraglider",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Movilidad",
+    "descripcion_corta": "Paravela inspirada en Zelda y medidor de estamina.",
+    "descripcion_larga": "Una adición fantástica a la movilidad temprana. Introduce una paravela (Paraglider) que te permite planear desde grandes alturas. Su uso está ligado a una barra de estamina verde (resistencia) que se agota en el aire, previniendo vuelos infinitos rotos.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Ofrece estatuas de diosas escondidas en las aldeas para aumentar tu estamina máxima a cambio de orbes.",
+      "Imprescindible para explorar las grandes cordilleras añadidas por Tectonic de forma segura."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/paraglider",
+    "prioridad": 102
+  },
+  {
+    "id": "trinkets",
+    "nombre": "Trinkets",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Interfaz",
+    "descripcion_corta": "Ranuras de inventario adicionales para joyería.",
+    "descripcion_larga": "El mod de infraestructura estándar (Baubles) que añade un menú secundario en el inventario con ranuras para collares, anillos, cinturones y guantes, permitiéndote equipar amuletos y artefactos mágicos sin sacrificar armadura.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Abre tu inventario y haz clic en el pequeño icono circular junto a tu personaje para ver las ranuras.",
+      "Integración total con Artifacts y Mythic Charms."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/trinkets",
+    "prioridad": 103
+  },
+  {
+    "id": "stoneworks",
+    "nombre": "Stoneworks",
+    "categoria": "Mod",
+    "subcategoria": "Decoración/Construcción",
+    "descripcion_corta": "Cientos de variantes de bloques de piedra.",
+    "descripcion_larga": "El paraíso de los constructores. Expande las posibilidades arquitectónicas añadiendo ladrillos, pilares, baldosas y paredes detalladas para cada tipo de piedra del juego (diorita, andesita, granito, pizarra), multiplicando la variedad de texturas de construcción.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Utiliza el cortapiedras (Stonecutter) para acceder rápidamente a todas las nuevas variantes sin crafteos tediosos."
+    ],
+    "url_descarga": "https://modrinth.com/mod/stoneworks",
+    "prioridad": 104
+  },
+  {
+    "id": "universal_ores",
+    "nombre": "Universal Ores",
+    "categoria": "Mod",
+    "subcategoria": "Estética/Inmersión",
+    "descripcion_corta": "Minerales adaptados visualmente a la piedra que los rodea.",
+    "descripcion_larga": "Hace que el minado sea mucho más lógico y hermoso visualmente. Si un mineral de hierro se genera en medio de un bloque de diorita o andesita, el mineral adoptará el color base de esa piedra de forma automática en lugar de verse como piedra gris genérica.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Facilita la construcción de minas decorativas limpias.",
+      "Optimizado para funcionar con paquetes de texturas externos."
+    ],
+    "url_descarga": "https://modrinth.com/mod/universal-ores",
+    "prioridad": 105
+  },
+  {
+    "id": "spyglass_improvements",
+    "nombre": "Spyglass Improvements",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Interfaz",
+    "descripcion_corta": "Catalejo mejorado con zoom fluido.",
+    "descripcion_larga": "Convierte al catalejo vanilla de un ítem inútil a una herramienta táctica vital. Elimina el molesto marco circular negro, permite hacer zoom in/out usando la rueda del ratón de forma fluida y ajustar la visión en distancias extremadamente lejanas.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Ideal para observar bases enemigas o localizar estructuras masivas sin acercarse demasiado."
+    ],
+    "url_descarga": "https://modrinth.com/mod/spyglass-improvements",
+    "prioridad": 106
+  },
+  {
+    "id": "stardew_fishing",
+    "nombre": "Stardew Fishing",
+    "categoria": "Mod",
+    "subcategoria": "Minijuego/Supervivencia",
+    "descripcion_corta": "Minijuego de pesca estilo Stardew Valley.",
+    "descripcion_larga": "Reemplaza el aburrido sistema de pesca estático de Minecraft por un minijuego interactivo basado en barra de tensión y seguimiento, haciendo que pescar sea activo, divertido y dependa de tu habilidad visual.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Mantén la barra de pesca sobre el icono del pez hasta llenarla para atraparlo con éxito.",
+      "Totalmente compatible con los nuevos peces de Hybrid Aquatic."
+    ],
+    "url_descarga": "https://modrinth.com/mod/stardew-fishing",
+    "prioridad": 107
+  },
+  {
+    "id": "magnum_torch",
+    "nombre": "Magnum Torch",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Defensa",
+    "descripcion_corta": "Evita el spawneo de monstruos en áreas enormes.",
+    "descripcion_larga": "Permite craftear una antorcha masiva que suprime el spawn natural de mobs hostiles en un radio gigante (hasta 64 bloques de distancia). Es perfecta para evitar poner cientos de antorchas feas en el suelo arruinando la estética oscura de tu ciudadela o castillo.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "No detiene el spawn de los Spawners artificiales de mazmorras.",
+      "Requiere materiales costosos de recolección en el nether y pociones."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/magnum-torch",
+    "prioridad": 108
+  },
+  {
+    "id": "visual_workbench",
+    "nombre": "Visual Workbench",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Estética",
+    "descripcion_corta": "Los ítems de crafteo se quedan en la mesa.",
+    "descripcion_larga": "Al igual que Easy Magic, este mod hace que los materiales de crafteo colocados en la mesa de trabajo no desaparezcan ni caigan al piso cuando cierras la interfaz. Además, renderiza de forma física un modelo 3D del ítem final que se está crafteando flotando sobre la mesa.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Excelente para proyectos cooperativos; un jugador puede dejar los materiales preparados para que el otro los termine."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/visual-workbench",
+    "prioridad": 109
+  },
+  {
+    "id": "sawmill",
+    "nombre": "Sawmill",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Construcción",
+    "descripcion_corta": "Un cortapiedras exclusivo para madera.",
+    "descripcion_larga": "Añade una mesa de aserradero (Sawmill) que funciona exactamente igual que el cortapiedras, pero para bloques de madera. Permite fabricar escaleras, losas y vallas de madera de forma precisa, ahorrando recursos y molestos crafteos residuales en la mesa de trabajo.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Un tronco te da exactamente la cantidad de escaleras o vallas justas que necesitas, optimizando el farmeo forestal."
+    ],
+    "url_descarga": "https://modrinth.com/mod/sawmill",
+    "prioridad": 110
+  },
+  {
+    "id": "nether_chested",
+    "nombre": "Nether Chested",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Almacenamiento",
+    "descripcion_corta": "Cofres de Netherita resistentes al fuego y explosiones.",
+    "descripcion_larga": "Introduce cofres blindados forjados con Netherita que no pueden ser destruidos por lava ni fuego, y que además cuentan con una capacidad de almacenamiento significativamente mayor. Indispensables para almacenar los objetos más valiosos de un clan.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Soportan explosiones directas de Creepers o TNT sin soltar tus preciados recursos en el área."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/nether-chested",
+    "prioridad": 111
+  },
+  {
+    "id": "comforts",
+    "nombre": "Comforts",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Exploración",
+    "descripcion_corta": "Sacos de dormir y hamacas funcionales.",
+    "descripcion_larga": "Introduce sacos de dormir para saltarse la noche que no reinician tu punto de aparición (respawn point), y hamacas que te permiten dormir durante el día para pasar a la noche directamente sin perder tu cama de base.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Lleva el saco de dormir en tus exploraciones largas, evitará que vuelvas a la base accidentalmente si mueres."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/comforts",
+    "prioridad": 112
+  },
+  {
+    "id": "artifacts",
+    "nombre": "Artifacts",
+    "categoria": "Mod",
+    "subcategoria": "Exploración/Equipamiento",
+    "descripcion_corta": "Objetos y equipo mágico oculto en mazmorras.",
+    "descripcion_larga": "Llena los cofres del mundo con equipo curioso y poderoso. Encontrarás zapatillas que te dan super saltos, guantes que aceleran la minería, aletas para bucear y paraguas para planear. Todo equipable en el menú de Trinkets.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "No se pueden craftear. Solo los más exploradores y saqueadores podrán conseguirlos en templos y minas."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/artifacts",
+    "prioridad": 113
+  },
+  {
+    "id": "charm_of_undying",
+    "nombre": "Charm of Undying",
+    "categoria": "Mod",
+    "subcategoria": "Utilidad/Supervivencia",
+    "descripcion_corta": "Tótem de inmortalidad como amuleto.",
+    "descripcion_larga": "Permite equipar el Tótem de Inmortalidad nativo del juego en una de las ranuras de joyería (Curios/Trinkets). Esto libera tu mano secundaria, permitiéndote llevar un escudo u otra herramienta mientras mantienes tu seguro de vida activo.",
+    "url_youtube": "",
+    "imagenes": [],
+    "guias": [
+      "Se activará automáticamente y se consumirá del espacio del amuleto en caso de recibir daño letal."
+    ],
+    "url_descarga": "https://www.curseforge.com/minecraft/mc-mods/charm-of-undying",
+    "prioridad": 114
   }
 ]
