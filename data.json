@@ -18,6 +18,23 @@
     "destacado": true
   },
   {
+  "id": "spawn",
+  "nombre": "Spawn",
+  "categoria": "Mod",
+  "subcategoria": "Criaturas",
+  "descripcion_corta": "Animales con nichos ecológicos y personalidades únicas.",
+  "descripcion_larga": "Añade una variedad de nuevos animales al mundo de Minecraft. Estas criaturas están diseñadas con nichos ecológicos específicos y personalidades propias, aportando un nuevo nivel de inmersión y dinamismo a la generación del mundo y la exploración.",
+  "url_youtube": "https://www.youtube.com/embed/IHDBGRPibUo",
+  "imagenes": [],
+  "guias": [
+    "Observa el comportamiento de las nuevas especies para entender su rol en el ecosistema.",
+    "Cada animal reacciona de forma distinta a la presencia del jugador y su entorno natural."
+  ],
+  "url_descarga": "https://modrinth.com/mod/spawn",
+  "prioridad": 9,
+  "destacado": true
+},
+  {
     "id": "simplyskills",
     "nombre": "Simply Skills",
     "categoria": "Mod",
